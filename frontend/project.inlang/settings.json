@@ -1,37 +1,11 @@
 {
-	"$schema": "https://inlang.com/schema/project-settings",
-	"sourceLanguageTag": "en",
-	"languageTags": ["en", "fr", "ru"],
-	"baseLocale": "en",
-	"locales": [
-		"en",
-		"fr",
-		"ar",
-		"pt",
-		"es",
-		"de",
-		"nl",
-		"it",
-		"pl",
-		"ro",
-		"hi",
-		"ur",
-		"cs",
-		"sv",
-		"id",
-		"da",
-		"hu",
-		"uk",
-		"el",
-		"tr",
-		"hr",
-		"ru"
-	],
-	"modules": [
-		"https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js",
-		"https://cdn.jsdelivr.net/npm/@inlang/plugin-m-function-matcher@2/dist/index.js"
-	],
-	"plugin.inlang.messageFormat": {
-		"pathPattern": "./messages/{locale}.json"
-	}
+  "$schema": "https://inlang.com/schema/project-settings",
+  "sourceLanguageTag": "en",
+  "languageTags": ["en", "fr", "ru"],
+  "modules": [
+    "https://cdn.jsdelivr.net/npm/@inlang/plugin-json@latest/dist/index.js"
+  ],
+  "plugin.inlang.json": {
+    "pathPattern": "./messages/{languageTag}.json"
+  }
 }
