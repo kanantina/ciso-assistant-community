@@ -1846,36 +1846,52 @@
 	"averageProgress": "Average progress",
 	"daysRemaining": "Days remaining",
 	"associatedFindingsAssessments": "Associated follow-ups",
-	"hourCount": [
-		{
-			"declarations": ["input count", "local countPlural = count: plural"],
-			"selectors": ["count", "countPlural"],
+	"hourCount": {
+		"0": {
+			"declarations": {
+				"0": "input count",
+				"1": "local countPlural = count: plural"
+			},
+			"selectors": {
+				"0": "count",
+				"1": "countPlural"
+			},
 			"match": {
 				"countPlural=one": "{count} Hour",
 				"countPlural=other": "{count} Hours"
 			}
 		}
-	],
-	"minuteCount": [
-		{
-			"declarations": ["input count", "local countPlural = count: plural"],
-			"selectors": ["countPlural"],
+	},
+	"minuteCount": {
+		"0": {
+			"declarations": {
+				"0": "input count",
+				"1": "local countPlural = count: plural"
+			},
+			"selectors": {
+				"0": "countPlural"
+			},
 			"match": {
 				"countPlural=one": "{count} Minute",
 				"countPlural=other": "{count} Minutes"
 			}
 		}
-	],
-	"dayCount": [
-		{
-			"declarations": ["input count", "local countPlural = count: plural"],
-			"selectors": ["countPlural"],
+	},
+	"dayCount": {
+		"0": {
+			"declarations": {
+				"0": "input count",
+				"1": "local countPlural = count: plural"
+			},
+			"selectors": {
+				"0": "countPlural"
+			},
 			"match": {
 				"countPlural=one": "{count} Day",
 				"countPlural=other": "{count} Days"
 			}
 		}
-	],
+	},
 	"serverURL": "Server URL",
 	"oidcConfiguration": "openid-configuration",
 	"tokenAuthMethod": "Token auth method",
