@@ -1,5 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/project-settings",
+	"sourceLanguageTag": "en",
 	"baseLocale": "en",
 	"locales": [
 		"en",
@@ -22,7 +23,8 @@
 		"uk",
 		"el",
 		"tr",
-		"hr"
+		"hr",
+		"ru"
 	],
 	"modules": [
 		"https://cdn.jsdelivr.net/npm/@inlang/plugin-message-format@4/dist/index.js",
