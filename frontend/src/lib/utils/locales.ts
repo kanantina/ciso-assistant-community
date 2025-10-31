@@ -82,6 +82,10 @@ export const LOCALE_MAP = {
 	hr: {
 		name: 'croatian',
 		flag: '🇭🇷'
+	},
+	ru: {
+		name: 'russian',
+		flag: '🇷🇺'
 	}
 };
 
@@ -106,7 +110,8 @@ export const language: any = {
 	ukrainian: m.ukrainian(),
 	greek: m.greek(),
 	turkish: m.turkish(),
-	croatian: m.croatian()
+	croatian: m.croatian(),
+	russian: m.russian(),
 };
 
 export const defaultLangLabels = {
@@ -130,7 +135,8 @@ export const defaultLangLabels = {
 	uk: 'Українська',
 	el: 'Ελληνικά',
 	tr: 'Türkçe',
-	hr: 'Hrvatski'
+	hr: 'Hrvatski',
+	ru: 'Russian'
 };
 
 export function toCamelCase(str: string) {
