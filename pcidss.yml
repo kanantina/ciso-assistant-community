@@ -1,0 +1,3085 @@
+urn: urn:intuitem:risk:library:pcidss-4_0
+locale: ru
+ref_id: PCI DSS 4.0
+name: Стандарт безопасности данных индустрии платежных карт
+description: 'Стандарт безопасности данных индустрии платежных карт: Требования и процедуры тестирования, v4.0
+
+  https://www.pcisecuritystandards.org/'
+copyright: "©2006 - 2022 PCI Security Standards Council, LLC. Все права защищены."
+version: 2
+publication_date: 2025-05-19
+provider: Совет по стандартам безопасности PCI
+packager: intuitem
+objects:
+  framework:
+    urn: urn:intuitem:risk:framework:pcidss-4_0
+    ref_id: PCI DSS 4.0
+    name: Стандарт безопасности данных индустрии платежных карт (PCI-DSS) 4.0
+    description: 'Стандарт безопасности данных индустрии платежных карт: Требования и процедуры тестирования, v4.0
+
+      https://www.pcisecuritystandards.org/'
+    requirement_nodes:
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:build-and-maintain-a-secure-network-and-systems
+      assessable: false
+      depth: 1
+      name: Создание и поддержание безопасной сети и систем
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:build-and-maintain-a-secure-network-and-systems
+      ref_id: '1'
+      name: Требование 1
+      description: Установка и поддержание средств контроля безопасности сети
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1
+      ref_id: '1.1'
+      description: Процессы и механизмы для установки и поддержания средств контроля безопасности сети определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.1
+      ref_id: 1.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 1:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.1
+      ref_id: 1.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 1 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1
+      ref_id: '1.2'
+      description: Средства контроля безопасности сети (NSC) настроены и поддерживаются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.1
+      description: 'Стандарты конфигурации для наборов правил NSC:
+
+        - Определены.
+
+        - Реализованы.
+
+        - Поддерживаются.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.2
+      description: Все изменения сетевых подключений и конфигураций NSC утверждаются и управляются в соответствии с процессом контроля изменений, определенным в Требовании 6.5.1.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.3
+      description: Поддерживается точная схема сети, показывающая все соединения между CDE и другими сетями, включая любые беспроводные сети.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.4
+      description: 'Поддерживается точная диаграмма потоков данных, которая соответствует следующему:
+
+        - Показывает все потоки данных учетных записей через системы и сети.
+
+        - Обновляется по мере необходимости при изменениях в окружении.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.5
+      description: Все разрешенные службы, протоколы и порты идентифицированы, утверждены и имеют определенную бизнес-необходимость.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.6
+      description: Функции безопасности определены и реализованы для всех используемых служб, протоколов и портов, которые считаются небезопасными, таким образом, чтобы риск был снижен.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.7
+      description: Конфигурации NSC проверяются не реже одного раза в шесть месяцев для подтверждения их актуальности и эффективности.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2.8
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.2
+      ref_id: 1.2.8
+      description: 'Файлы конфигурации для NSC:
+
+        - Защищены от несанкционированного доступа.
+
+        - Согласованы с активными сетевыми конфигурациями.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1
+      ref_id: '1.3'
+      description: Сетевой доступ к среде данных держателей карт и из нее ограничен.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3
+      ref_id: 1.3.1
+      description: "Входящий трафик в CDE ограничен следующим образом: \n- Только необходимый трафик. \n- Весь другой трафик явно запрещен."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3
+      ref_id: 1.3.2
+      description: 'Исходящий трафик из CDE ограничен следующим образом:
+
+        - Только необходимый трафик.
+
+        - Весь другой трафик явно запрещен.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.3
+      ref_id: 1.3.3
+      description: "NSC установлены между всеми беспроводными сетями и CDE, независимо от того, является ли беспроводная сеть CDE, таким образом, что: \n- Весь беспроводной трафик из беспроводных сетей в CDE запрещен по умолчанию.\n- В CDE разрешен только беспроводной трафик с авторизованной бизнес-целью."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1
+      ref_id: '1.4'
+      description: Сетевые соединения между доверенными и недоверенными сетями контролируются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4
+      ref_id: 1.4.1
+      description: NSC реализованы между доверенными и недоверенными сетями.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4
+      ref_id: 1.4.2
+      description: 'Входящий трафик из недоверенных сетей в доверенные сети ограничен:
+
+        - Связью с компонентами системы, которые авторизованы для предоставления общедоступных служб, протоколов и портов.
+
+        - Состоятельными ответами на соединения, инициированные компонентами системы в доверенной сети.
+
+        - Весь другой трафик запрещен.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4
+      ref_id: 1.4.3
+      description: Реализованы меры против спуфинга для обнаружения и блокировки поддельных исходных IP-адресов, входящих в доверенную сеть.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4
+      ref_id: 1.4.4
+      description: Компоненты системы, которые хранят данные держателей карт, не являются непосредственно доступными из недоверенных сетей.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.4
+      ref_id: 1.4.5
+      description: Раскрытие внутренних IP-адресов и информации о маршрутизации ограничено только авторизованным сторонам.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1
+      ref_id: '1.5'
+      description: Риски для CDE от вычислительных устройств, которые могут подключаться как к недоверенным сетям, так и к CDE, снижены.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:1.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:1.5
+      ref_id: 1.5.1
+      description: "Средства контроля безопасности реализованы на любых вычислительных устройствах, включая корпоративные и личные устройства сотрудников, которые подключаются как к недоверенным сетям (включая Интернет), так и к CDE, следующим образом:\n- Определены конкретные настройки конфигурации для предотвращения внедрения угроз в сеть организации.\n- Средства контроля безопасности активно работают.\n- Средства контроля безопасности не могут быть изменены пользователями вычислительных устройств, если это специально не задокументировано и не авторизовано руководством в индивидуальном порядке на ограниченный период."
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:build-and-maintain-a-secure-network-and-systems
+      ref_id: '2'
+      name: Требование 2
+      description: Применение безопасных конфигураций ко всем компонентам системы
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2
+      ref_id: '2.1'
+      description: Процессы и механизмы для применения безопасных конфигураций ко всем компонентам системы определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.1
+      ref_id: 2.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 2:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.1
+      ref_id: 2.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 2 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2
+      ref_id: '2.2'
+      description: Компоненты системы настроены и управляются безопасно.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.1
+      description: 'Стандарты конфигурации разработаны, реализованы и поддерживаются, чтобы:
+
+        - Охватывать все компоненты системы.
+
+        - Соответствовать общепринятым отраслевым стандартам усиления безопасности системы или рекомендациям поставщиков по усилению безопасности.
+
+        - Обновляться по мере выявления новых проблем уязвимостей, как определено в Требовании 6.3.1.
+
+        - Применяться при настройке новых систем и проверяться как установленные до или сразу после подключения компонента системы к производственной среде.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.2
+      description: 'Учетные записи поставщиков по умолчанию управляются следующим образом:
+
+        - Если учетная запись (учетные записи) поставщика по умолчанию будет использоваться, пароль по умолчанию изменяется в соответствии с Требованием 8.3.6.
+
+        - Если учетная запись (учетные записи) поставщика по умолчанию не будет использоваться, учетная запись удаляется или отключается.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.3
+      description: "Основные функции, требующие разных уровней безопасности, управляются следующим образом: \n- На одном компоненте системы существует только одна основная функция.\nИЛИ \n- Основные функции с различающимися уровнями безопасности, существующие на одном компоненте системы, изолированы друг от друга.\nИЛИ\n- Все основные функции с различающимися уровнями безопасности на одном компоненте системы защищены до уровня, требуемого функцией с наивысшей потребностью в безопасности."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.4
+      description: Включены только необходимые службы, протоколы, демоны и функции, а вся ненужная функциональность удалена или отключена.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.5
+      description: 'Если присутствуют какие-либо небезопасные службы, протоколы или демоны:
+
+        - Бизнес-обоснование документируется.
+
+        - Документируются и реализуются дополнительные функции безопасности, которые снижают риск использования небезопасных служб, протоколов или демонов.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.6
+      description: Параметры безопасности системы настроены для предотвращения неправомерного использования.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.2
+      ref_id: 2.2.7
+      description: Весь неконсольный административный доступ шифруется с использованием стойкой криптографии.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2
+      ref_id: '2.3'
+      description: Беспроводные среды настроены и управляются безопасно.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.3
+      ref_id: 2.3.1
+      description: "Для беспроводных сред, подключенных к CDE или передающих данные учетной записи, все настройки беспроводных устройств по умолчанию изменены при установке или подтверждены как безопасные, включая, но не ограничиваясь: \n- Ключи беспроводного шифрования по умолчанию.\n- Пароли на точках беспроводного доступа.\n- Настройки SNMP по умолчанию.\n- Любые другие связанные с безопасностью настройки беспроводных устройств по умолчанию."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:2.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:2.3
+      ref_id: 2.3.2
+      description: 'Для беспроводных сред, подключенных к CDE или передающих данные учетной записи, ключи беспроводного шифрования изменяются следующим образом:
+
+        - Всякий раз, когда сотрудники, обладающие знаниями о ключе, покидают компанию или роль, для которой эти знания были необходимы.
+
+        - Всякий раз, когда есть подозрение или известно, что ключ скомпрометирован.'
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:protect-account-data
+      assessable: false
+      depth: 1
+      name: Защита данных учетной записи
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:protect-account-data
+      ref_id: '3'
+      name: Требование 3
+      description: Защита хранимых данных учетной записи
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.1'
+      description: Процессы и механизмы для защиты хранимых данных учетной записи определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.1
+      ref_id: 3.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 3:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.1
+      ref_id: 3.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 3 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.2'
+      description: Хранение данных учетной записи сведено к минимуму.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.2
+      ref_id: 3.2.1
+      description: 'Хранение данных учетной записи сведено к минимуму за счет реализации политик, процедур и процессов хранения и удаления данных, которые включают, по крайней мере, следующее:
+
+        - Охват всех мест хранения данных учетной записи.
+
+        - Охват любых конфиденциальных данных аутентификации (SAD), хранящихся до завершения авторизации. Этот пункт является лучшей практикой до даты его вступления в силу; подробности см. в примечаниях по применимости ниже.
+
+        - Ограничение объема хранимых данных и времени хранения тем, что требуется для юридических или нормативных и/или бизнес-требований.
+
+        - Конкретные требования к хранению для хранимых данных учетной записи, которые определяют продолжительность периода хранения и включают документированное бизнес-обоснование.
+
+        - Процессы безопасного удаления или преобразования данных учетной записи в невосстановимые, когда они больше не нужны в соответствии с политикой хранения.
+
+        - Процесс проверки, по крайней мере, раз в три месяца, что хранимые данные учетной записи, превышающие определенный период хранения, были безопасно удалены или преобразованы в невосстановимые.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.3'
+      description: Конфиденциальные данные аутентификации (SAD) не хранятся после авторизации.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3
+      ref_id: 3.3.1
+      description: SAD не сохраняется после авторизации, даже если зашифрованы. Все полученные конфиденциальные данные аутентификации преобразуются в невосстановимые по завершении процесса авторизации.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1
+      ref_id: 3.3.1.1
+      description: Полное содержимое любой дорожки не сохраняется по завершении процесса авторизации.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1
+      ref_id: 3.3.1.2
+      description: Код проверки карты не сохраняется по завершении процесса авторизации.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1.3
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.1
+      ref_id: 3.3.1.3
+      description: Персональный идентификационный номер (PIN) и PIN-блок не сохраняются по завершении процесса авторизации.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3
+      ref_id: 3.3.2
+      description: 'SAD, которые хранятся в электронном виде до завершения авторизации, шифруются с использованием стойкой криптографии.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.3
+      ref_id: 3.3.3
+      description: 'Дополнительное требование для эмитентов и компаний, которые поддерживают услуги эмитента и хранят конфиденциальные данные аутентификации: Любое хранение конфиденциальных данных аутентификации:
+
+        - Ограничено тем, что необходимо для законной бизнес-потребности эмитента, и защищено.
+
+        - Зашифровано с использованием стойкой криптографии. Этот пункт является лучшей практикой до даты его вступления в силу.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.4'
+      description: Доступ к отображению полного PAN и возможность копирования данных держателей карт ограничены.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.4
+      ref_id: 3.4.1
+      description: 'PAN маскируется при отображении (BIN и последние четыре цифры - это максимальное количество отображаемых цифр), таким образом, что только персонал с законной бизнес-потребностью может видеть больше, чем BIN и последние четыре цифры PAN.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.4
+      ref_id: 3.4.2
+      description: 'При использовании технологий удаленного доступа технические средства контроля предотвращают копирование и/или перемещение PAN для всего персонала, за исключением тех, у кого есть документированное, явное разрешение и законная, определенная бизнес-потребность.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.5'
+      description: Основной номер счета (PAN) защищен везде, где он хранится.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5
+      ref_id: 3.5.1
+      description: "PAN преобразуется в нечитаемый вид везде, где он хранится, с использованием любого из следующих подходов:\n- Однонаправленные хэши на основе стойкой криптографии всего PAN.\n- Усечение (хэширование не может быть использовано для замены усеченного сегмента PAN).\n– Если в среде присутствуют хэшированные и усеченные версии одного и того же PAN или разные форматы усечения одного и того же PAN, реализованы дополнительные средства контроля, чтобы разные версии не могли быть соотнесены для восстановления исходного PAN.\n- Индексные токены.\n- Стойкая криптография с соответствующими процессами и процедурами управления ключами."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.1
+      ref_id: 3.5.1.1
+      description: Хэши, используемые для преобразования PAN в нечитаемый вид (в соответствии с первым пунктом Требования 3.5.1), являются ключевыми криптографическими хэшами всего PAN, с соответствующими процессами и процедурами управления ключами в соответствии с Требованиями 3.6 и 3.7.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.3
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.1
+      ref_id: 3.5.1.2
+      description: 'Если для преобразования PAN в нечитаемый вид используется шифрование на уровне диска или раздела (а не шифрование на уровне файла, столбца или поля базы данных), оно реализовано только следующим образом:
+
+        - На съемных электронных носителях.
+        ИЛИ
+        - Если используется для несъемных электронных носителей, PAN также преобразуется в нечитаемый вид с помощью другого механизма, соответствующего Требованию 3.5.1.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.4
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.5.1
+      ref_id: 3.5.1.3
+      description: 'Если для преобразования PAN в нечитаемый вид используется шифрование на уровне диска или раздела (а не шифрование на уровне файла, столбца или поля базы данных), оно управляется следующим образом:
+
+        - Логический доступ управляется отдельно и независимо от механизмов аутентификации и контроля доступа native операционной системы.
+
+        - Ключи дешифрования не связаны с учетными записями пользователей.
+
+        - Факторы аутентификации (пароли, парольные фразы или криптографические ключи), которые разрешают доступ к незашифрованным данным, хранятся безопасно.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.6'
+      description: Криптографические ключи, используемые для защиты хранимых данных учетной записи, защищены.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6
+      ref_id: 3.6.1
+      description: 'Процедуры определены и реализованы для защиты криптографических ключей, используемых для защиты хранимых данных учетной записи, от раскрытия и неправомерного использования, которые включают:
+
+        - Доступ к ключам ограничен наименьшим необходимым количеством хранителей.
+
+        - Ключи, шифрующие ключи, по крайней мере, так же стойки, как и ключи, шифрующие данные, которые они защищают.
+
+        - Ключи, шифрующие ключи, хранятся отдельно от ключей, шифрующих данные.
+
+        - Ключи хранятся безопасно в наименьшем возможном количестве мест и форм.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1
+      ref_id: 3.6.1.1
+      description: 'Дополнительное требование только для поставщиков услуг: Поддерживается документированное описание криптографической архитектуры, которое включает:
+
+        - Подробности всех алгоритмов, протоколов и ключей, используемых для защиты хранимых данных учетной записи, включая стойкость ключа и дату истечения срока действия.
+
+        - Недопущение использования одних и тех же криптографических ключей в производственных и тестовых средах. Этот пункт является лучшей практикой до даты его вступления в силу.
+
+        - Описание использования ключа для каждого ключа.
+
+        - Инвентаризация любых аппаратных модулей безопасности (HSM), систем управления ключами (KMS) и других безопасных криптографических устройств (SCD), используемых для управления ключами, включая тип и местоположение устройств, как описано в Требовании 12.3.4.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1
+      ref_id: 3.6.1.2
+      description: 'Секретные и приватные ключи, используемые для шифрования/дешифрования хранимых данных учетной записи, хранятся в одной (или нескольких) из следующих форм постоянно:
+
+        - Зашифрованы с помощью ключа, шифрующего ключ, который по крайней мере так же стойк, как ключ, шифрующий данные, и который хранится отдельно от ключа, шифрующего данные.
+
+        - Внутри безопасного криптографического устройства (SCD), такого как аппаратный модуль безопасности (HSM) или одобренное PTS устройство точки взаимодействия.
+
+        - В виде, по крайней мере, двух полноразмерных компонентов ключа или долей ключа, в соответствии с общепринятым отраслевым методом.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1.3
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1
+      ref_id: 3.6.1.3
+      description: Доступ к компонентам криптографического ключа в открытом виде ограничен наименьшим необходимым количеством хранителей.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1.4
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.6.1
+      ref_id: 3.6.1.4
+      description: Криптографические ключи хранятся в наименьшем возможном количестве мест.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3
+      ref_id: '3.7'
+      description: 'Там, где используется криптография для защиты хранимых данных учетной записи, процессы и процедуры управления ключами охватывают все аспекты ключа' # Примечание: Описание обрезано в оригинале
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.1
+      description: Политики и процедуры управления ключами реализованы для включения генерации стойких криптографических ключей, используемых для защиты хранимых данных учетной записи.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.2
+      description: Политики и процедуры управления ключами реализованы для включения безопасного распределения криптографических ключей, используемых для защиты хранимых данных учетной записи.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.3
+      description: Политики и процедуры управления ключами реализованы для включения безопасного хранения криптографических ключей, используемых для защиты хранимых данных учетной записи.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.4
+      description: 'Политики и процедуры управления ключами реализованы для криптографической смены ключей, которые достигли конца своего криптопериода, как определено связанным поставщиком приложения или владельцем ключа, и на основе отраслевых лучших практик и руководств, включая следующее:
+
+        - Определенный криптопериод для каждого используемого типа ключа.
+
+        - Процесс смены ключей в конце определенного криптопериода.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.5
+      description: 'Политики и процедуры управления ключами реализованы для включения вывода из эксплуатации, замены или уничтожения ключей, используемых для защиты хранимых данных учетной записи, по мере необходимости, когда:
+
+        - Ключ достиг конца своего определенного криптопериода.
+
+        - Целостность ключа была ослаблена, включая случаи, когда персонал, обладающий знаниями о компоненте ключа в открытом виде, покидает компанию или роль, для которой компонент ключа был известен.
+
+        - Есть подозрение или известно, что ключ скомпрометирован.
+
+        - Выведенные из эксплуатации или замененные ключи не используются для операций шифрования.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.6
+      description: Там, где ручные операции управления криптографическими ключами в открытом виде выполняются персоналом, политики и процедуры управления ключами реализованы для управления этими операциями с использованием разделения знаний и двойного контроля.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.7
+      description: Политики и процедуры управления ключами реализованы для предотвращения несанкционированной замены криптографических ключей.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.8
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.8
+      description: Политики и процедуры управления ключами реализованы для того, чтобы хранители криптографических ключей формально подтверждали (письменно или электронно), что они понимают и принимают свои обязанности хранителя ключей.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7.9
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:3.7
+      ref_id: 3.7.9
+      description: "Дополнительная процедура тестирования только для оценок поставщиков услуг: Если поставщик услуг делится криптографическими ключами со своими клиентами для передачи или хранения данных учетной записи, проверьте документацию, которую поставщик услуг предоставляет своим клиентам, чтобы убедиться, что она включает руководство по безопасной передаче, хранению и обновлению ключей клиентов в соответствии со всеми элементами, указанными в Требованиях 3.7.1–3.7.8 выше."
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:protect-account-data
+      ref_id: '4'
+      name: Требование 4
+      description: Защита данных держателей карт с помощью стойкой криптографии во время передачи по открытым, общедоступным сетям
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4
+      ref_id: '4.1'
+      description: Процессы и механизмы для защиты данных держателей карт с помощью стойкой криптографии во время передачи по открытым, общедоступным сетям определены и документированы.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4.1
+      ref_id: 4.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 4:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4.1
+      ref_id: 4.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 4 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4
+      ref_id: '4.2'
+      description: PAN защищен с помощью стойкой криптографии во время передачи.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2
+      ref_id: 4.2.1
+      description: 'Стойкая криптография и протоколы безопасности реализованы следующим образом для защиты PAN во время передачи по открытым, общедоступным сетям:
+
+        - Принимаются только доверенные ключи и сертификаты.
+
+        - Сертификаты, используемые для защиты PAN во время передачи по открытым, общедоступным сетям, подтверждаются как действительные и не просроченные или отозванные. Этот пункт является лучшей практикой до даты его вступления в силу; подробности см. в примечаниях по применимости ниже.
+
+        - Используемый протокол поддерживает только безопасные версии или конфигурации и не поддерживает откат к или использование небезопасных версий, алгоритмов, размеров ключей или реализаций.
+
+        - Стойкость шифрования соответствует используемой методологии шифрования.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2.1
+      ref_id: 4.2.1.1
+      description: "Ведется инвентаризация доверенных ключей и сертификатов организации, используемых для защиты PAN во время передачи."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2.1
+      ref_id: 4.2.1.2
+      description: Беспроводные сети, передающие PAN или подключенные к CDE, используют лучшие отраслевые практики для реализации стойкой криптографии для аутентификации и передачи.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:4.2
+      ref_id: 4.2.2
+      description: PAN защищен с помощью стойкой криптографии всякий раз, когда он отправляется через технологии обмена сообщениями конечных пользователей.
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:maintain-a-vulnerability-management-program
+      assessable: false
+      depth: 1
+      name: Поддержание программы управления уязвимостями
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:maintain-a-vulnerability-management-program
+      ref_id: '5'
+      name: Требование 5
+      description: Защита всех систем и сетей от вредоносного программного обеспечения
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5
+      ref_id: '5.1'
+      description: Процессы и механизмы для защиты всех систем и сетей от вредоносного программного обеспечения определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.1
+      ref_id: 5.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 5:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.1
+      ref_id: 5.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 5 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5
+      ref_id: '5.2'
+      description: Вредоносное программное обеспечение (malware) предотвращается или обнаруживается и устраняется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2
+      ref_id: 5.2.1
+      description: Решение (решения) антивирусного программного обеспечения развернуто на всех компонентах системы, за исключением тех компонентов системы, которые идентифицированы в периодических оценках в соответствии с Требованием 5.2.3, которые заключают, что компоненты системы не подвержены риску от вредоносного программного обеспечения.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2
+      ref_id: 5.2.2
+      description: 'Развернутое решение (решения) антивирусного программного обеспечения:
+
+        - Обнаруживает все известные типы вредоносного программного обеспечения.
+
+        - Удаляет, блокирует или изолирует все известные типы вредоносного программного обеспечения.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2
+      ref_id: 5.2.3
+      description: 'Любые компоненты системы, которые не подвержены риску заражения вредоносным программным обеспечением, оцениваются периодически, чтобы включить следующее:
+
+        - Документированный список всех компонентов системы, не подверженных риску заражения вредоносным программным обеспечением.
+
+        - Идентификация и оценка развивающихся угроз вредоносного программного обеспечения для этих компонентов системы.
+
+        - Подтверждение того, что такие компоненты системы по-прежнему не требуют защиты антивирусным программным обеспечением.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2.3.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.2.3
+      ref_id: 5.2.3.1
+      description: "Частота периодических оценок компонентов системы, идентифицированных как не подверженные риску заражения вредоносным программным обеспечением, определяется в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5
+      ref_id: '5.3'
+      description: Механизмы и процессы антивирусной защиты активны, поддерживаются и отслеживаются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3
+      ref_id: 5.3.1
+      description: Решение (решения) антивирусного программного обеспечения поддерживается в актуальном состоянии с помощью автоматических обновлений.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3
+      ref_id: 5.3.2
+      description: "Решение (решения) антивирусного программного обеспечения:\n- Выполняет периодическое сканирование и активное или сканирование в реальном времени. \nИЛИ\n- Выполняет непрерывный поведенческий анализ систем или процессов."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.2.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.2
+      ref_id: 5.3.2.1
+      description: "Если для выполнения Требования 5.3.2 выполняются периодические проверки на вредоносное программное обеспечение, частота проверок определяется в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3
+      ref_id: 5.3.3
+      description: 'Для съемных электронных носителей решение (решения) антивирусного программного обеспечения:
+
+        - Выполняет автоматическое сканирование при вставке, подключении или логическом монтировании носителя,
+        ИЛИ
+        - Выполняет непрерывный поведенческий анализ систем или процессов при вставке, подключении или логическом монтировании носителя.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3
+      ref_id: 5.3.4
+      description: Журналы аудита для решения (решений) антивирусного программного обеспечения включены и сохраняются в соответствии с Требованием 10.5.1.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.3
+      ref_id: 5.3.5
+      description: Механизмы антивирусной защиты не могут быть отключены или изменены пользователями, если это специально не задокументировано и не авторизовано руководством в индивидуальном порядке на ограниченный период времени.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5
+      ref_id: '5.4'
+      description: Механизмы защиты от фишинга защищают пользователей от фишинговых атак.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:5.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:5.4
+      ref_id: 5.4.1
+      description: Реализованы процессы и автоматизированные механизмы для обнаружения и защиты персонала от фишинговых атак.
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:maintain-a-vulnerability-management-program
+      ref_id: '6'
+      name: Требование 6
+      description: Разработка и поддержание безопасных систем и программного обеспечения
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6
+      ref_id: '6.1'
+      description: Процессы и механизмы для разработки и поддержания безопасных систем и программного обеспечения определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.1
+      ref_id: 6.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 6:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.1
+      ref_id: 6.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 6 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6
+      ref_id: '6.2'
+      description: Индивидуальное и пользовательское программное обеспечение разрабатывается безопасно.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2
+      ref_id: 6.2.1
+      description: 'Индивидуальное и пользовательское программное обеспечение разрабатывается
+
+        безопасно, следующим образом:
+
+        - На основе отраслевых стандартов и/или лучших практик для безопасной разработки.
+
+        - В соответствии с PCI DSS (например, безопасная аутентификация и ведение журналов).
+
+        - Включая рассмотрение вопросов информационной безопасности на каждом этапе жизненного цикла разработки программного обеспечения.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2
+      ref_id: 6.2.2
+      description: 'Персонал по разработке программного обеспечения, работающий над индивидуальным и пользовательским программным обеспечением, обучается не реже одного раза в 12 месяцев следующим образом:
+
+        - По безопасности программного обеспечения, соответствующей их должностным функциям и языкам разработки.
+
+        - Включая безопасный дизайн программного обеспечения и безопасные методы программирования.
+
+        - Включая, если используются инструменты тестирования безопасности, как использовать инструменты для обнаружения уязвимостей в программном обеспечении.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2
+      ref_id: 6.2.3
+      description: 'Индивидуальное и пользовательское программное обеспечение проверяется перед выпуском в производство или клиентам, чтобы выявить и исправить потенциальные уязвимости программирования, следующим образом:
+
+        - Обзоры кода обеспечивают, чтобы код был разработан в соответствии с руководящими принципами безопасного программирования.
+
+        - Обзоры кода ищут как существующие, так и возникающие уязвимости программного обеспечения.
+
+        - Соответствующие исправления реализуются до выпуска.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2.3.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2.3
+      ref_id: 6.2.3.1
+      description: 'Если для индивидуального и пользовательского программного обеспечения перед выпуском в производство выполняются ручные обзоры кода, изменения кода:
+
+        - Просматриваются лицами, отличными от автора исходного кода, и которые обладают знаниями о методах обзора кода и безопасных практиках программирования.
+
+        - Просматриваются и утверждаются руководством перед выпуском.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.2
+      ref_id: 6.2.4
+      description: "Определены и используются методы программной инженерии или другие методы персоналом по разработке программного обеспечения для предотвращения или снижения распространенных атак на программное обеспечение и связанных уязвимостей в индивидуальном и пользовательском программном обеспечении, включая, но не ограничиваясь следующим:\n- Атаки внедрения, включая SQL, LDAP, XPath или другие команды, параметры, объекты, ошибки или уязвимости типа внедрения.\n- Атаки на данные и структуры данных, включая попытки манипулировать буферами, указателями, входными данными или общими данными.\n- Атаки на использование криптографии, включая попытки эксплуатировать слабые, небезопасные или неподходящие криптографические реализации, алгоритмы, наборы шифров или режимы работы.\n- Атаки на бизнес-логику, включая попытки злоупотребить или обойти функции и функциональности приложения через манипуляцию API, протоколами и каналами связи, клиентской функциональностью или другими функциями и ресурсами системы/приложения. Это включает межсайтовый скриптинг (XSS) и межсайтовую подделку запроса (CSRF).\n- Атаки на механизмы контроля доступа, включая попытки обойти или злоупотребить механизмами идентификации, аутентификации или авторизации, или попытки эксплуатировать слабости в реализации таких механизмов.\n- Атаки через любые уязвимости, идентифицированные как «высокий риск» в процессе идентификации уязвимостей, как определено в Требовании 6.3.1."
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6
+      ref_id: '6.3'
+      description: Уязвимости безопасности выявляются и устраняются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3
+      ref_id: 6.3.1
+      description: 'Уязвимости безопасности выявляются и управляются следующим образом:
+
+        - Новые уязвимости безопасности выявляются с использованием признанных в отрасли источников информации об уязвимостях безопасности, включая оповещения от международных и национальных групп реагирования на компьютерные инциденты (CERT).
+
+        - Уязвимостям присваивается рейтинг риска на основе лучших отраслевых практик и учета потенциального воздействия.
+
+        - Рейтинги риска идентифицируют, как минимум, все уязвимости, считающиеся высокорисковыми или критическими для среды.
+
+        - Охватываются уязвимости для индивидуального и пользовательского, а также стороннего программного обеспечения (например, операционных систем и баз данных).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3
+      ref_id: 6.3.2
+      description: Ведется инвентаризация индивидуального и пользовательского программного обеспечения, а также сторонних компонентов программного обеспечения, включенных в индивидуальное и пользовательское программное обеспечение, для облегчения управления уязвимостями и исправлениями.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.3
+      ref_id: 6.3.3
+      description: 'Все компоненты системы защищены от известных уязвимостей путем установки применимых исправлений/обновлений безопасности следующим образом:
+
+        - Критические или исправления/обновления безопасности высокого риска (идентифицированные в соответствии с процессом присвоения рейтинга риска в Требовании 6.3.1) устанавливаются в течение одного месяца с момента выпуска.
+
+        - Все другие применимые исправления/обновления безопасности устанавливаются в соответствующие сроки, определяемые организацией (например, в течение трех месяцев с момента выпуска).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6
+      ref_id: '6.4'
+      description: Веб-приложения, доступные извне, защищены от атак.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4
+      ref_id: 6.4.1
+      description: "Для веб-приложений, доступных извне, новые угрозы и уязвимости устраняются на постоянной основе, и эти приложения защищены от известных атак следующим образом:\n- Проверка веб-приложений, доступных извне, с помощью ручных или автоматизированных инструментов оценки безопасности уязвимостей приложения или методов следующим образом:\n    – Не реже одного раза в 12 месяцев и после значительных изменений.\n    – Организацией, специализирующейся на безопасности приложений.\n    – Включая, как минимум, все распространенные атаки на программное обеспечение из Требования 6.2.4.\n    – Все уязвимости ранжируются в соответствии с требованием 6.3.1.\n    – Все уязвимости исправляются.\n    – Приложение переоценивается после исправлений.\nИЛИ\n- Установка автоматизированного технического решения (решений), которое постоянно обнаруживает и предотвращает веб-атаки, следующим образом:\n    – Установлено перед веб-приложениями, доступными извне, для обнаружения и предотвращения веб-атак.\n    – Активно работает и актуально, если применимо.\n    – Генерирует журналы аудита.\n    – Настроено либо на блокировку веб-атак, либо на генерацию оповещения, которое немедленно расследуется."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4
+      ref_id: 6.4.2
+      description: 'Для веб-приложений, доступных извне, развернуто автоматизированное техническое решение, которое постоянно обнаруживает и предотвращает веб-атаки, с как минимум следующим:
+
+        - Установлено перед веб-приложениями, доступными извне, и настроено на обнаружение и предотвращение веб-атак.
+
+        - Активно работает и актуально, если применимо.
+
+        - Генерирует журналы аудита.
+
+        - Настроено либо на блокировку веб-атак, либо на генерацию оповещения, которое немедленно расследуется.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.4
+      ref_id: 6.4.3
+      description: "Все скрипты платежных страниц, которые загружаются и выполняются в браузере потребителя, управляются следующим образом:\n• Реализован метод для подтверждения того, что каждый скрипт авторизован.\n• Реализован метод для обеспечения целостности каждого скрипта.\n• Ведется инвентаризация всех скриптов с письменным обоснованием того, почему каждый необходим."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6
+      ref_id: '6.5'
+      description: Изменения всех компонентов системы управляются безопасно.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      ref_id: 6.5.1
+      description: 'Изменения всех компонентов системы в производственной среде вносятся в соответствии с установленными процедурами, которые включают:
+
+        - Причину и описание изменения.
+
+        - Документирование воздействия на безопасность.
+
+        - Документированное утверждение изменения уполномоченными сторонами.
+
+        - Тестирование для проверки того, что изменение не оказывает негативного воздействия на безопасность системы.
+
+        - Для изменений индивидуального и пользовательского программного обеспечения все обновления тестируются на соответствие Требованию 6.2.4 перед развертыванием в производственной среде.
+
+        - Процедуры для устранения сбоев и возврата в безопасное состояние.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      ref_id: 6.5.2
+      description: После завершения значительного изменения подтверждается, что все применимые требования PCI DSS выполнены на всех новых или измененных системах и сетях, и документация обновляется по мере необходимости.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      ref_id: 6.5.3
+      description: Среды предпроизводственного тестирования отделены от производственных сред, и разделение обеспечивается средствами контроля доступа.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      ref_id: 6.5.4
+      description: Роли и функции разделены между производственными и средами предпроизводственного тестирования для обеспечения подотчетности, так что развертываются только проверенные и утвержденные изменения.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      ref_id: 6.5.5
+      description: Активные PAN не используются в средах предпроизводственного тестирования, за исключением случаев, когда эти среды включены в CDE и защищены в соответствии со всеми применимыми требованиями PCI DSS.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:6.5
+      ref_id: 6.5.6
+      description: Тестовые данные и тестовые учетные записи удаляются из компонентов системы перед тем, как система переходит в производственную среду.
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:implement-strong-access-control-measures
+      assessable: false
+      depth: 1
+      name: Реализация строгих мер контроля доступа
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:implement-strong-access-control-measures
+      ref_id: '7'
+      name: Требование 7
+      description: Ограничение доступа к компонентам системы и данным держателей карт в соответствии с бизнес-необходимостью
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7
+      ref_id: '7.1'
+      description: Процессы и механизмы для ограничения доступа к компонентам системы и данным держателей карт в соответствии с бизнес-необходимостью определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.1
+      ref_id: 7.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 7:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.1
+      ref_id: 7.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 7 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7
+      ref_id: '7.2'
+      description: Доступ к компонентам системы и данным соответствующим образом определен и назначен.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      ref_id: 7.2.1
+      description: "Определена модель контроля доступа, которая включает предоставление доступа следующим образом:\n- Соответствующий доступ в зависимости от бизнеса и потребностей в доступе организации.\n- Доступ к компонентам системы и ресурсам данных, основанный на классификации должностей и функциях пользователей.\n- Наименьшие привилегии, необходимые (например, пользователь, администратор) для выполнения должностной функции."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      ref_id: 7.2.2
+      description: 'Доступ назначается пользователям, включая привилегированных пользователей, на основе:
+
+        - Классификации должностей и функций.
+
+        - Наименьших привилегий, необходимых для выполнения должностных обязанностей.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      ref_id: 7.2.3
+      description: Необходимые привилегии утверждаются уполномоченным персоналом.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      ref_id: 7.2.4
+      description: 'Все учетные записи пользователей и связанные с ними права доступа, включая учетные записи третьих сторон/поставщиков, проверяются следующим образом:
+
+        - Не реже одного раза в шесть месяцев.
+
+        - Чтобы убедиться, что учетные записи пользователей и доступ остаются соответствующими на основе должностных функций.
+
+        - Любой неподходящий доступ устраняется.
+
+        - Руководство подтверждает, что доступ остается соответствующим.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      ref_id: 7.2.5
+      description: 'Все учетные записи приложений и систем и связанные с ними права доступа назначаются и управляются следующим образом:
+
+        - На основе наименьших привилегий, необходимых для работоспособности системы или приложения.
+
+        - Доступ ограничен системами, приложениями или процессами, которые конкретно требуют их использования.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.5.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.5
+      ref_id: 7.2.5.1
+      description: "Весь доступ учетных записей приложений и систем и связанные с ними права доступа проверяются следующим образом:\n- Периодически (с частотой, определенной в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1).\n- Доступ приложения/системы остается соответствующим выполняемой функции.\n- Любой неподходящий доступ устраняется.\n- Руководство подтверждает, что доступ остается соответствующим."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.2
+      ref_id: 7.2.6
+      description: 'Весь пользовательский доступ к репозиториям хранимых данных держателей карт ограничен следующим образом:
+
+        - Через приложения или другие программные методы, с доступом и разрешенными действиями на основе ролей пользователей и наименьших привилегий.
+
+        - Только ответственный администратор (администраторы) может напрямую обращаться к репозиториям хранимых CHD или выполнять запросы к ним.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7
+      ref_id: '7.3'
+      description: Доступ к компонентам системы и данным управляется через систему (системы) контроля доступа.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3
+      ref_id: 7.3.1
+      description: "Реализована система (системы) контроля доступа, которая ограничивает доступ на основе необходимости знать пользователя и охватывает все компоненты системы."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3
+      ref_id: 7.3.2
+      description: Система (системы) контроля доступа настроена на применение разрешений, назначенных отдельным лицам, приложениям и системам, на основе классификации должностей и функций.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:7.3
+      ref_id: 7.3.3
+      description: "Система (системы) контроля доступа установлена на \"запретить все\" по умолчанию."
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:implement-strong-access-control-measures
+      ref_id: '8'
+      name: Требование 8
+      description: Идентификация пользователей и аутентификация доступа к компонентам системы
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      ref_id: '8.1'
+      description: Процессы и механизмы для идентификации пользователей и аутентификации доступа к компонентам системы определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.1
+      ref_id: 8.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 8:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.1
+      ref_id: 8.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 8 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      ref_id: '8.2'
+      description: "Идентификация пользователей и связанные учетные записи для пользователей и администраторов строго управляются на протяжении всего жизненного цикла учетной записи."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.1
+      description: Всем пользователям назначается уникальный идентификатор перед разрешением доступа к компонентам системы или данным держателей карт.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.2
+      description: 'Групповые, общие или обобщенные учетные записи или другие общие учетные данные аутентификации используются только при необходимости в исключительных случаях и управляются следующим образом:
+
+        - Использование учетной записи предотвращается, если оно не требуется для исключительных обстоятельств.
+
+        - Использование ограничено временем, необходимым для исключительных обстоятельств.
+
+        - Бизнес-обоснование использования документируется.
+
+        - Использование явно утверждается руководством.
+
+        - Личность пользователя подтверждается перед предоставлением доступа к учетной записи.
+
+        - Каждое выполненное действие attributable к индивидуальному пользователю.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.3
+      description: 'Дополнительное требование только для поставщиков услуг: Поставщики услуг с удаленным доступом к помещениям заказчика используют уникальные факторы аутентификации для каждого помещения заказчика.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.4
+      description: 'Добавление, удаление и модификация идентификаторов пользователей, факторов аутентификации и других объектов идентификаторов управляются следующим образом:
+
+        - Авторизованы с соответствующим утверждением.
+
+        - Реализованы только с привилегиями, указанными в документированном утверждении.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.5
+      description: Доступ для уволенных пользователей немедленно отзывается.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.6
+      description: Неактивные учетные записи пользователей удаляются или отключаются в течение 90 дней бездействия.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.7
+      description: 'Учетные записи, используемые третьими сторонами для доступа, поддержки или обслуживания компонентов системы через удаленный доступ, управляются следующим образом:
+
+        - Включаются только на необходимый период времени и отключаются, когда не используются.
+
+        - Использование отслеживается на предмет неожиданной активности.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2.8
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.2
+      ref_id: 8.2.8
+      description: Если пользовательский сеанс простаивает более 15 минут, пользователь должен повторно пройти аутентификацию для повторной активации терминала или сеанса.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      ref_id: '8.3'
+      description: Строгая аутентификация для пользователей и администраторов установлена и управляется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.1
+      description: "Весь пользовательский доступ к компонентам системы для пользователей и администраторов аутентифицируется с помощью по крайней мере одного из следующих факторов аутентификации:\n• То, что вы знаете, например, пароль или парольную фразу.\n• То, что у вас есть, например, токен или смарт-карта.\n• То, что вы есть, например, биометрический элемент."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.2
+      description: Стойкая криптография используется для преобразования всех факторов аутентификации в нечитаемый вид во время передачи и хранения на всех компонентах системы.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.3
+      description: Личность пользователя проверяется перед изменением любого фактора аутентификации.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.4
+      description: "Неудачные попытки аутентификации ограничиваются:\n- Блокировкой идентификатора пользователя после не более 10 попыток.\n- Установкой длительности блокировки на минимум 30 минут или до подтверждения личности пользователя."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.5
+      description: 'Если пароли/парольные фразы используются в качестве факторов аутентификации для выполнения Требования 8.3.1, они устанавливаются и сбрасываются для каждого пользователя следующим образом:
+
+        - Устанавливаются в уникальное значение при первом использовании и при сбросе.
+
+        - Принудительно изменяются сразу после первого использования.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.6
+      description: 'Если пароли/парольные фразы используются в качестве факторов аутентификации для выполнения Требования 8.3.1, они соответствуют следующему минимальному уровню сложности:
+
+        - Минимальная длина 12 символов (или, ЕСЛИ система не поддерживает 12 символов, минимальная длина 8 символов).
+
+        - Содержат как цифровые, так и буквенные символы.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.7
+      description: Физическим лицам не разрешается отправлять новый пароль/парольную фразу, который совпадает с любым из последних четырех использованных паролей/парольных фраз.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.8
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.8
+      description: 'Политики и процедуры аутентификации документированы и доведены до всех пользователей, включая:
+
+        - Руководство по выбору строгих факторов аутентификации.
+
+        - Руководство о том, как пользователи должны защищать свои факторы аутентификации.
+
+        - Инструкции не использовать повторно ранее использованные пароли/парольные фразы.
+
+        - Инструкции по изменению паролей/парольных фраз, если есть какие-либо подозрения или знания о том, что пароли/парольные фразы скомпрометированы, и как сообщить об инциденте.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.9
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.9
+      description: "Если пароли/парольные фразы используются в качестве единственного фактора аутентификации для пользовательского доступа (т.е. в любой реализации однофакторной аутентификации), то либо:\n• Пароли/парольные фразы изменяются не реже одного раза в 90 дней,\nИЛИ\n• Состояние безопасности учетных записей динамически анализируется, и доступ к ресурсам в реальном времени автоматически определяется соответствующим образом."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.10
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.10
+      description: 'Дополнительное требование только для поставщиков услуг: Если пароли/парольные фразы используются в качестве единственного фактора аутентификации для доступа пользователей-клиентов к данным держателей карт (т.е. в любой реализации однофакторной аутентификации), то предоставляется руководство для пользователей-клиентов, включая:
+
+        - Руководство для клиентов по периодическому изменению своих паролей/парольных фраз пользователей.
+
+        - Руководство о том, когда и при каких обстоятельствах пароли/парольные фразы должны быть изменены.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.10.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.10
+      ref_id: 8.3.10.1
+      description: "Дополнительное требование только для поставщиков услуг: Если пароли/парольные фразы используются в качестве единственного фактора аутентификации для доступа пользователей-клиентов (т.е. в любой реализации однофакторной аутентификации), то либо:\n• Пароли/парольные фразы изменяются не реже одного раза в 90 дней,\nИЛИ\n• Состояние безопасности учетных записей динамически анализируется, и доступ к ресурсам в реальном времени автоматически определяется соответствующим образом."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3.11
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.3
+      ref_id: 8.3.11
+      description: 'Там, где используются такие факторы аутентификации, как физические или логические токены безопасности, смарт-карты или сертификаты:
+
+        - Факторы назначаются индивидуальному пользователю и не используются совместно несколькими пользователями.
+
+        - Физические и/или логические средства контроля обеспечивают, что только предполагаемый пользователь может использовать этот фактор для получения доступа.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      ref_id: '8.4'
+      description: Многофакторная аутентификация (MFA) реализована для защиты доступа в CDE.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4
+      ref_id: 8.4.1
+      description: MFA реализована для всего неконсольного доступа в CDE для персонала с административным доступом.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4
+      ref_id: 8.4.2
+      description: MFA реализована для всего доступа в CDE.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.4
+      ref_id: 8.4.3
+      description: "MFA реализована для всего удаленного сетевого доступа, исходящего извне сети организации, который может получить доступ к CDE или повлиять на него, следующим образом:\n- Весь удаленный доступ всего персонала, как пользователей, так и администраторов, исходящий извне сети организации.\n- Весь удаленный доступ третьих сторон и поставщиков."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      ref_id: '8.5'
+      description: Системы многофакторной аутентификации (MFA) настроены для предотвращения неправомерного использования.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.5
+      ref_id: 8.5.1
+      description: 'Системы MFA реализованы следующим образом:
+
+        - Система MFA не подвержена атакам повтора.
+
+        - Системы MFA не могут быть обойдены любыми пользователями, включая административных пользователей, если это специально не задокументировано и не авторизовано руководством на исключительной основе, на ограниченный период времени.
+
+        - Используются по крайней мере два разных типа факторов аутентификации.
+
+        - Успех всех факторов аутентификации требуется перед предоставлением доступа.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8
+      ref_id: '8.6'
+      description: Использование учетных записей приложений и систем и связанных факторов аутентификации строго управляется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6
+      ref_id: 8.6.1
+      description: 'Если учетные записи, используемые системами или приложениями, могут использоваться для интерактивного входа в систему, они управляются следующим образом:
+
+        - Интерактивное использование предотвращается, если оно не требуется для исключительных обстоятельств.
+
+        - Интерактивное использование ограничено временем, необходимым для исключительных обстоятельств.
+
+        - Бизнес-обоснование интерактивного использования документируется.
+
+        - Интерактивное использование явно утверждается руководством.
+
+        - Личность пользователя подтверждается перед предоставлением доступа к учетной записи.
+
+        - Каждое выполненное действие attributable к индивидуальному пользователю.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6
+      ref_id: 8.6.2
+      description: Пароли/парольные фразы для любых учетных записей приложений и систем, которые могут использоваться для интерактивного входа в систему, не встроены в скрипты, файлы конфигурации/свойств или индивидуальный и пользовательский исходный код.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:8.6
+      ref_id: 8.6.3
+      description: "Пароли/парольные фразы для любых учетных записей приложений и систем защищены от неправомерного использования следующим образом:\n- Пароли/парольные фразы изменяются периодически (с частотой, определенной в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1) и при подозрении или подтверждении компрометации.\n- Пароли/парольные фразы конструируются с достаточной сложностью, соответствующей тому, как часто организация меняет пароли/парольные фразы."
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:implement-strong-access-control-measures
+      ref_id: '9'
+      name: Требование 9
+      description: Ограничение физического доступа к данным держателей карт
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9
+      ref_id: '9.1'
+      description: Процессы и механизмы для ограничения физического доступа к данным держателей карт определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.1
+      ref_id: 9.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 9:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.1
+      ref_id: 9.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 9 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9
+      ref_id: '9.2'
+      description: Средства контроля физического доступа управляют входом в помещения и системы, содержащие данные держателей карт.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2
+      ref_id: 9.2.1
+      description: Реализованы соответствующие средства контроля входа в помещение для ограничения физического доступа к системам в CDE.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2.1
+      ref_id: 9.2.1.1
+      description: 'Индивидуальный физический доступ к чувствительным областям внутри CDE контролируется либо видеокамерами, либо механизмами контроля физического доступа (или обоими) следующим образом:
+
+        - Точки входа и выхода в/из чувствительных областей внутри CDE контролируются.
+
+        - Устройства или механизмы мониторинга защищены от несанкционированного вмешательства или отключения.
+
+        - Собранные данные просматриваются и соотносятся с другими записями.
+
+        - Собранные данные хранятся не менее трех месяцев, если иное не ограничено законом.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2
+      ref_id: 9.2.2
+      description: Реализованы физические и/или логические средства контроля для ограничения использования общедоступных сетевых розеток в помещении.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2
+      ref_id: 9.2.3
+      description: Физический доступ к точкам беспроводного доступа, шлюзам, сетевому/коммуникационному оборудованию и телекоммуникационным линиям в помещении ограничен.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.2
+      ref_id: 9.2.4
+      description: Доступ к консолям в чувствительных областях ограничен с помощью блокировки, когда они не используются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9
+      ref_id: '9.3'
+      description: Физический доступ для персонала и посетителей авторизован и управляется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3
+      ref_id: 9.3.1
+      description: "Реализованы процедуры для авторизации и управления физическим доступом персонала к CDE, включая:\n- Идентификацию персонала.\n- Управление изменениями в требованиях к физическому доступу человека.\n- Отзыв или прекращение идентификации персонала.\n- Ограничение доступа к процессу или системе идентификации для авторизованного персонала."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3.1
+      ref_id: 9.3.1.1
+      description: 'Физический доступ к чувствительным областям внутри CDE для персонала контролируется следующим образом:
+
+        - Доступ авторизован и основан на индивидуальной должностной функции.
+
+        - Доступ немедленно отзывается при увольнении.
+
+        - Все механизмы физического доступа, такие как ключи, карты доступа и т.д., возвращаются или отключаются при увольнении.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3
+      ref_id: 9.3.2
+      description: 'Реализованы процедуры для авторизации и управления доступом посетителей к CDE, включая:
+
+        - Посетители авторизуются перед входом.
+
+        - Посетители сопровождаются все время.
+
+        - Посетители четко идентифицированы и получают бейдж или другое удостоверение, срок действия которого истекает.
+
+        - Бейджи или другие удостоверения посетителей визуально отличают посетителей от персонала.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3
+      ref_id: 9.3.3
+      description: Бейджи или удостоверения посетителей сдаются или деактивируются перед тем, как посетители покидают помещение, или в дату истечения срока действия.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.3
+      ref_id: 9.3.4
+      description: "Используется журнал посетителей для ведения физической записи активности посетителей в помещении и в чувствительных областях, включая:\n- Имя посетителя и представляемую организацию.\n- Дату и время визита.\n- Имя персонала, авторизующего физический доступ.\n- Хранение журнала не менее трех месяцев, если иное не ограничено законом."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9
+      ref_id: '9.4'
+      description: Носители с данными держателей карт безопасно хранятся, доступны, распределяются и уничтожаются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.1
+      description: Все носители с данными держателей карт физически защищены.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.1
+      ref_id: 9.4.1.1
+      description: Автономные резервные копии носителей с данными держателей карт хранятся в безопасном месте.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.1
+      ref_id: 9.4.1.2
+      description: Безопасность места (мест) хранения автономных резервных копий носителей с данными держателей карт проверяется не реже одного раза в 12 месяцев.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.2
+      description: Все носители с данными держателей карт классифицируются в соответствии с конфиденциальностью данных.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.3
+      description: 'Носители с данными держателей карт, отправляемые за пределы помещения, защищаются следующим образом:
+
+        - Носители, отправляемые за пределы помещения, регистрируются.
+
+        - Носители отправляются через безопасную курьерскую службу или другой способ доставки, который можно точно отслеживать.
+
+        - Журналы отслеживания вне помещения включают подробности о местоположении носителей.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.4
+      description: Руководство утверждает все носители с данными держателей карт, которые перемещаются за пределы помещения (включая случаи, когда носители распределяются среди физических лиц).
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.5
+      description: Ведется инвентаризация журналов всех электронных носителей с данными держателей карт.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.5.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.5
+      ref_id: 9.4.5.1
+      description: Инвентаризация электронных носителей с данными держателей карт проводится не реже одного раза в 12 месяцев.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.6
+      description: "Материалы на бумажных носителях с данными держателей карт уничтожаются, когда они больше не нужны для бизнеса или юридических причин, следующим образом:\n• Материалы измельчаются в кросс-резательной шредере, сжигаются или превращаются в pulp, чтобы данные держателей карт не могли быть восстановлены.\n• Материалы хранятся в безопасных контейнерах для хранения перед уничтожением."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.4
+      ref_id: 9.4.7
+      description: 'Электронные носители с данными держателей карт уничтожаются, когда они больше не нужны для бизнеса или юридических причин, одним из следующих способов:
+
+        - Электронный носитель уничтожается.
+
+        - Данные держателей карт преобразуются в невосстановимые, так что они не могут быть восстановлены.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9
+      ref_id: '9.5'
+      description: Устройства точки взаимодействия (POI) защищены от несанкционированного вмешательства и несанкционированной замены.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5
+      ref_id: 9.5.1
+      description: 'Устройства POI, которые захватывают данные платежной карты через прямое физическое взаимодействие с формой платежной карты, защищены от несанкционированного вмешательства и несанкционированной замены, включая следующее:
+
+        - Ведение списка устройств POI.
+
+        - Периодический осмотр устройств POI для выявления несанкционированного вмешательства или несанкционированной замены.
+
+        - Обучение персонала быть внимательным к подозрительному поведению и сообщать о несанкционированном вмешательстве или несанкционированной замене устройств.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1
+      ref_id: 9.5.1.1
+      description: 'Ведется актуальный список устройств POI, включая:
+
+        - Марку и модель устройства.
+
+        - Местоположение устройства.
+
+        - Серийный номер устройства или другие методы уникальной идентификации.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1
+      ref_id: 9.5.1.2
+      description: Поверхности устройств POI периодически проверяются для обнаружения несанкционированного вмешательства и несанкционированной замены.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1.2.1
+      assessable: true
+      depth: 6
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1.2
+      ref_id: 9.5.1.2.1
+      description: "Частота периодических проверок устройств POI и тип выполняемых проверок определяются в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1.3
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:9.5.1
+      ref_id: 9.5.1.3
+      description: 'Обучение предоставляется персоналу в средах POI, чтобы быть внимательным к попыткам несанкционированного вмешательства или замены устройств POI, и включает:
+
+        - Проверку личности любых лиц от третьих сторон, утверждающих, что они являются персоналом по ремонту или техническому обслуживанию, перед предоставлением им доступа для модификации или устранения неполадок устройств.
+
+        - Процедуры для обеспечения того, что устройства не устанавливаются, не заменяются и не возвращаются без проверки.
+
+        - Внимательность к подозрительному поведению вокруг устройств.
+
+        - Сообщение о подозрительном поведении и признаках несанкционированного вмешательства или замены устройств соответствующему персоналу.'
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:regularly-monitor-and-test-networks
+      assessable: false
+      depth: 1
+      name: Регулярный мониторинг и тестирование сетей
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:regularly-monitor-and-test-networks
+      ref_id: '10'
+      name: Требование 10
+      description: Ведение журналов и мониторинг всего доступа к компонентам системы и данным держателей карт
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.1'
+      description: Процессы и механизмы для ведения журналов и мониторинга всего доступа к компонентам системы и данным держателей карт определены и документированы.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.1
+      ref_id: 10.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 10:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.1
+      ref_id: 10.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 10 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.2'
+      description: Журналы аудита реализованы для поддержки обнаружения аномалий и подозрительной активности, а также судебного анализа событий.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2
+      ref_id: 10.2.1
+      description: Журналы аудита включены и активны для всех компонентов системы и данных держателей карт.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.1
+      description: Журналы аудита фиксируют весь индивидуальный пользовательский доступ к данным держателей карт.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.2
+      description: Журналы аудита фиксируют все действия, предпринятые любым лицом с административным доступом, включая любое интерактивное использование учетных записей приложений или систем.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.3
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.3
+      description: Журналы аудита фиксируют весь доступ к журналам аудита.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.4
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.4
+      description: Журналы аудита фиксируют все неудачные попытки логического доступа.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.5
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.5
+      description: 'Журналы аудита фиксируют все изменения учетных данных идентификации и аутентификации, включая, но не ограничиваясь:
+
+        - Создание новых учетных записей.
+
+        - Повышение привилегий.
+
+        - Все изменения, добавления или удаления учетных записей с административным доступом.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.6
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.6
+      description: 'Журналы аудита фиксируют следующее:
+
+        - Всю инициализацию новых журналов аудита, и
+
+        - Все запуски, остановки или приостановки существующих журналов аудита.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1.7
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.1
+      ref_id: 10.2.1.7
+      description: Журналы аудита фиксируют все создание и удаление объектов системного уровня.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.2
+      ref_id: 10.2.2
+      description: 'Журналы аудита записывают следующие детали для каждого регистрируемого события:
+
+        - Идентификацию пользователя.
+
+        - Тип события.
+
+        - Дату и время.
+
+        - Индикацию успеха и неудачи.
+
+        - Источник события.
+
+        - Идентичность или имя затронутых данных, компонента системы, ресурса или службы (например, имя и протокол).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.3'
+      description: Журналы аудита защищены от уничтожения и несанкционированных модификаций.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3
+      ref_id: 10.3.1
+      description: Доступ на чтение к файлам журналов аудита ограничен теми, у кого есть связанная с работой необходимость.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3
+      ref_id: 10.3.2
+      description: Файлы журналов аудита защищены для предотвращения модификаций отдельными лицами.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3
+      ref_id: 10.3.3
+      description: Файлы журналов аудита, включая те, что для внешних технологий, оперативно резервируются на безопасный, центральный, внутренний сервер журналов или другие носители, которые трудно модифицировать.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.3
+      ref_id: 10.3.4
+      description: Мониторинг целостности файлов или механизмы обнаружения изменений используются для журналов аудита, чтобы гарантировать, что существующие данные журналов не могут быть изменены без генерации предупреждений.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.4'
+      description: Журналы аудита проверяются для выявления аномалий или подозрительной активности.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4
+      ref_id: 10.4.1
+      description: 'Следующие журналы аудита проверяются не реже одного раза в день:
+
+        - Все события безопасности.
+
+        - Журналы всех компонентов системы, которые хранят, обрабатывают или передают CHD и/или SAD.
+
+        - Журналы всех критических компонентов системы.
+
+        - Журналы всех серверов и компонентов системы, которые выполняют функции безопасности (например, средства контроля безопасности сети, системы обнаружения/предотвращения вторжений (IDS/IPS), серверы аутентификации).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.1
+      ref_id: 10.4.1.1
+      description: Автоматизированные механизмы используются для выполнения проверок журналов аудита.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4
+      ref_id: 10.4.2
+      description: Журналы всех других компонентов системы (тех, которые не указаны в Требовании 10.4.1) проверяются периодически.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.2.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.2
+      ref_id: 10.4.2.1
+      description: "Частота периодических проверок журналов для всех других компонентов системы (не определенных в Требовании 10.4.1) определяется в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.4
+      ref_id: 10.4.3
+      description: Исключения и аномалии, выявленные в процессе проверки, устраняются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.5'
+      description: История журналов аудита сохраняется и доступна для анализа.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.5
+      ref_id: 10.5.1
+      description: Сохранять историю журналов аудита не менее 12 месяцев, причем как минимум последние три месяца должны быть немедленно доступны для анализа.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.6'
+      description: Механизмы синхронизации времени поддерживают согласованные настройки времени во всех системах.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6
+      ref_id: 10.6.1
+      description: Системные часы и время синхронизируются с использованием технологии синхронизации времени.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6
+      ref_id: 10.6.2
+      description: 'Системы настроены на правильное и согласованное время следующим образом:
+
+        - Используется один или несколько назначенных серверов времени.
+
+        - Только назначенный центральный сервер (серверы) времени получает время из внешних источников.
+
+        - Время, полученное из внешних источников, основано на Международном атомном времени или Всемирном координированном времени (UTC).
+
+        - Назначенный сервер (серверы) времени принимает обновления времени только от конкретных общепринятых отраслевых внешних источников.
+
+        - Если есть более одного назначенного сервера времени, серверы времени взаимодействуют друг с другом, чтобы поддерживать точное время.
+
+        - Внутренние системы получают информацию о времени только от назначенного центрального сервера (серверов) времени.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.6
+      ref_id: 10.6.3
+      description: 'Настройки и данные синхронизации времени защищены следующим образом:
+
+        - Доступ к данным времени ограничен только персоналом с бизнес-потребностью.
+
+        - Любые изменения настроек времени на критических системах регистрируются, отслеживаются и проверяются.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10
+      ref_id: '10.7'
+      description: Сбои критических систем контроля безопасности обнаруживаются, сообщаются и на них оперативно реагируют.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7
+      ref_id: 10.7.1
+      description: 'Дополнительное требование только для поставщиков услуг: Сбои критических систем контроля безопасности обнаруживаются, оповещаются и оперативно устраняются, включая, но не ограничиваясь сбоями следующих критических систем контроля безопасности:
+
+        - Средства контроля безопасности сети.
+
+        - IDS/IPS.
+
+        - FIM.
+
+        - Решения антивирусного программного обеспечения.
+
+        - Средства контроля физического доступа.
+
+        - Средства контроля логического доступа.
+
+        - Механизмы ведения журналов аудита.
+
+        - Средства контроля сегментации (если используются).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7
+      ref_id: 10.7.2
+      description: 'Сбои критических систем контроля безопасности обнаруживаются, оповещаются и оперативно устраняются, включая, но не ограничиваясь сбоями следующих критических систем контроля безопасности:
+
+        - Средства контроля безопасности сети.
+
+        - IDS/IPS.
+
+        - Механизмы обнаружения изменений.
+
+        - Решения антивирусного программного обеспечения.
+
+        - Средства контроля физического доступа.
+
+        - Средства контроля логического доступа.
+
+        - Механизмы ведения журналов аудита.
+
+        - Средства контроля сегментации (если используются).
+
+        - Механизмы проверки журналов аудита.
+
+        - Автоматизированные инструменты тестирования безопасности (если используются).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:10.7
+      ref_id: 10.7.3
+      description: 'На сбои любых критических систем контроля безопасности оперативно реагируют, включая, но не ограничиваясь:
+
+        - Восстановление функций безопасности.
+
+        - Идентификацию и документирование продолжительности (дата и время от начала до конца) сбоя безопасности.
+
+        - Идентификацию и документирование причины (причин) сбоя и документирование необходимого исправления.
+
+        - Идентификацию и устранение любых проблем безопасности, возникших во время сбоя.
+
+        - Определение того, требуются ли дальнейшие действия в результате сбоя безопасности.
+
+        - Реализацию средств контроля для предотвращения повторного возникновения причины сбоя.
+
+        - Возобновление мониторинга средств контроля безопасности.'
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:regularly-monitor-and-test-networks
+      ref_id: '11'
+      name: Требование 11
+      description: Регулярное тестирование безопасности систем и сетей
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      ref_id: '11.1'
+      description: Процессы и механизмы для регулярного тестирования безопасности систем и сетей определены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.1
+      ref_id: 11.1.1
+      description: 'Все политики безопасности и операционные процедуры, указанные в Требовании 11:
+
+        - Документированы.
+
+        - Поддерживаются в актуальном состоянии.
+
+        - Используются.
+
+        - Известны всем затронутым сторонам.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.1
+      ref_id: 11.1.2
+      description: Роли и обязанности по выполнению мероприятий в Требовании 11 документированы, назначены и понятны.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      ref_id: '11.2'
+      description: Точки беспроводного доступа идентифицируются и отслеживаются, а несанкционированные точки беспроводного доступа устраняются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.2
+      ref_id: 11.2.1
+      description: 'Авторизованные и несанкционированные точки беспроводного доступа управляются следующим образом:
+
+        - Проверяется наличие точек беспроводного (Wi-Fi) доступа.
+
+        - Обнаруживаются и идентифицируются все авторизованные и несанкционированные точки беспроводного доступа.
+
+        - Проверка, обнаружение и идентификация происходят не реже одного раза в три месяца.
+
+        - Если используется автоматизированный мониторинг, персонал уведомляется с помощью генерируемых предупреждений.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.2
+      ref_id: 11.2.2
+      description: Ведется инвентаризация авторизованных точек беспроводного доступа, включая документированное бизнес-обоснование.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      ref_id: '11.3'
+      description: Внешние и внутренние уязвимости регулярно выявляются, приоритезируются и устраняются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3
+      ref_id: 11.3.1
+      description: "Внутреннее сканирование уязвимостей выполняется следующим образом:\n- Не реже одного раза в три месяца.\n- Уязвимости высокого риска и критические (в соответствии с рейтингами риска уязвимостей организации, определенными в Требовании 6.3.1) устраняются.\n- Выполняются повторные сканирования, которые подтверждают, что все уязвимости высокого риска и критические (как отмечено выше) были устранены.\n- Инструмент сканирования поддерживается в актуальном состоянии с последней информацией об уязвимостях.\n- Сканирования выполняются квалифицированным персоналом, и существует организационная независимость тестировщика."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1
+      ref_id: 11.3.1.1
+      description: "Все другие применимые уязвимости (те, которые не ранжированы как высокий риск или критические в соответствии с рейтингами риска уязвимостей организации, определенными в Требовании 6.3.1) управляются следующим образом:\n- Устраняются на основе риска, определенного в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1.\n- Повторные сканирования проводятся по мере необходимости."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1
+      ref_id: 11.3.1.2
+      description: 'Внутреннее сканирование уязвимостей выполняется через аутентифицированное сканирование следующим образом:
+
+        - Системы, которые не могут принимать учетные данные для аутентифицированного сканирования, документируются.
+
+        - Используются достаточные привилегии для тех систем, которые принимают учетные данные для сканирования.
+
+        - Если учетные записи, используемые для аутентифицированного сканирования, могут использоваться для интерактивного входа, они управляются в соответствии с Требованием 8.2.2.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1.3
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.1
+      ref_id: 11.3.1.3
+      description: "Внутреннее сканирование уязвимостей выполняется после любых значительных изменений следующим образом:\n- Уязвимости высокого риска и критические (в соответствии с рейтингами риска уязвимостей организации, определенными в Требовании 6.3.1) устраняются.\n- Повторные сканирования проводятся по мере необходимости.\n- Сканирования выполняются квалифицированным персоналом, и существует организационная независимость тестировщика (не требуется быть QSA или ASV)."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3
+      ref_id: 11.3.2
+      description: "Внешнее сканирование уязвимостей выполняется следующим образом:\n• Не реже одного раза в три месяца.\n• Поставщиком сканирования, утвержденным PCI SSC (ASV).\n• Уязвимости устраняются, и выполняются требования Руководства программы ASV для успешного сканирования.\n• Повторные сканирования выполняются по мере необходимости для подтверждения того, что уязвимости устранены в соответствии с требованиями Руководства программы ASV для успешного сканирования."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.2.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.3.2
+      ref_id: 11.3.2.1
+      description: 'Внешнее сканирование уязвимостей выполняется после любых значительных изменений следующим образом:
+
+        - Уязвимости, оцененные в 4.0 или выше по CVSS, устраняются.
+
+        - Повторные сканирования проводятся по мере необходимости.
+
+        - Сканирования выполняются квалифицированным персоналом, и существует организационная независимость тестировщика (не требуется быть QSA или ASV).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      ref_id: '11.4'
+      description: Внешнее и внутреннее тестирование на проникновение выполняется регулярно, а эксплуатируемые уязвимости и слабости безопасности исправляются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.1
+      description: 'Методология тестирования на проникновение определена, документирована и реализована организацией и включает:
+
+        - Общепринятые отраслевые подходы к тестированию на проникновение.
+
+        - Охват всей периметра CDE и критических систем.
+
+        - Тестирование как изнутри, так и извне сети.
+
+        - Тестирование для проверки любых средств контроля сегментации и сокращения области действия.
+
+        - Тестирование на проникновение на уровне приложения для идентификации, как минимум, уязвимостей, перечисленных в Требовании 6.2.4.
+
+        - Тестирование на проникновение на сетевом уровне, которое охватывает все компоненты, поддерживающие сетевые функции, а также операционные системы.
+
+        - Обзор и учет угроз и уязвимостей, произошедших за последние 12 месяцев.
+
+        - Документированный подход к оценке и устранению риска, создаваемого эксплуатируемыми уязвимостями и слабостями безопасности, обнаруженными во время тестирования на проникновение.
+
+        - Сохранение результатов тестирования на проникновение и результатов мероприятий по исправлению в течение не менее 12 месяцев.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.2
+      description: "Внутреннее тестирование на проникновение выполняется:\n- В соответствии с определенной методологией организации.\n- Не реже одного раза в 12 месяцев.\n- После любого значительного обновления или изменения инфраструктуры или приложения.\n- Квалифицированным внутренним ресурсом или квалифицированной внешней третьей стороной.\n- Существует организационная независимость тестировщика (не требуется быть QSA или ASV)."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.3
+      description: "Внешнее тестирование на проникновение выполняется:\n- В соответствии с определенной методологией организации.\n- Не реже одного раза в 12 месяцев.\n- После любого значительного обновления или изменения инфраструктуры или приложения.\n- Квалифицированным внутренним ресурсом или квалифицированной внешней третьей стороной.\n- Существует организационная независимость тестировщика (не требуется быть QSA или ASV)."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.4
+      description: "Эксплуатируемые уязвимости и слабости безопасности, обнаруженные во время тестирования на проникновение, исправляются следующим образом:\n- В соответствии с оценкой организации риска, создаваемого проблемой безопасности, как определено в Требовании 6.3.1.\n- Тестирование на проникновение повторяется для проверки исправлений."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.5
+      description: "Если сегментация используется для изоляции CDE от других сетей, тестирование на проникновение выполняется на средствах контроля сегментации следующим образом:\n- Не реже одного раза в 12 месяцев и после любых изменений в средствах контроля/методах сегментации.\n- Охватывая все используемые средства контроля/методы сегментации.\n- В соответствии с определенной методологией тестирования на проникновение организации.\n- Подтверждая, что средства контроля/методы сегментации операционны и эффективны, и изолируют CDE от всех систем, не входящих в область действия.\n- Подтверждая эффективность любого использования изоляции для разделения систем с различающимися уровнями безопасности (см. Требование 2.2.3).\n- Выполняется квалифицированным внутренним ресурсом или квалифицированной внешней третьей стороной.\n- Существует организационная независимость тестировщика (не требуется быть QSA или ASV)."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.6
+      description: "Дополнительное требование только для поставщиков услуг: Если сегментация используется для изоляции CDE от других сетей, тестирование на проникновение выполняется на средствах контроля сегментации следующим образом:\n- Не реже одного раза в шесть месяцев и после любых изменений в средствах контроля/методах сегментации.\n- Охватывая все используемые средства контроля/методы сегментации.\n- В соответствии с определенной методологией тестирования на проникновение организации.\n- Подтверждая, что средства контроля/методы сегментации операционны и эффективны, и изолируют CDE от всех систем, не входящих в область действия.\n- Подтверждая эффективность любого использования изоляции для разделения систем с различающимися уровнями безопасности (см. Требование 2.2.3).\n- Выполняется квалифицированным внутренним ресурсом или квалифицированной внешней третьей стороной.\n- Существует организационная независимость тестировщика (не требуется быть QSA или ASV)."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.4
+      ref_id: 11.4.7
+      description: 'Дополнительное требование только для поставщиков услуг с множественной арендой: Поставщики услуг с множественной арендой поддерживают своих клиентов в проведении внешнего тестирования на проникновение в соответствии с Требованиями 11.4.3 и 11.4.4.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      ref_id: '11.5'
+      description: Сетевые вторжения и неожиданные изменения файлов обнаруживаются и на них реагируют.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5
+      ref_id: 11.5.1
+      description: 'Методы обнаружения и/или предотвращения вторжений используются для обнаружения и/или предотвращения вторжений в сеть следующим образом:
+
+        - Весь трафик отслеживается на периметре CDE.
+
+        - Весь трафик отслеживается в критических точках CDE.
+
+        - Персонал оповещается о предполагаемых компрометациях.
+
+        - Все механизмы, базовые показатели и сигнатуры обнаружения и предотвращения вторжений поддерживаются в актуальном состоянии.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5.1.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5.1
+      ref_id: 11.5.1.1
+      description: 'Дополнительное требование только для поставщиков услуг: Методы обнаружения и/или предотвращения вторжений обнаруживают, оповещают
+
+        о/предотвращают и устраняют скрытые каналы связи вредоносного программного обеспечения.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.5
+      ref_id: 11.5.2
+      description: 'Механизм обнаружения изменений (например, инструменты мониторинга целостности файлов) развертывается следующим образом:
+
+        - Чтобы оповещать персонал о несанкционированной модификации (включая изменения, добавления и удаления) критических файлов.
+
+        - Чтобы выполнять сравнения критических файлов не реже одного раза в неделю.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11
+      ref_id: '11.6'
+      description: Несанкционированные изменения на платежных страницах обнаруживаются и на них реагируют.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:11.6.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:11.6
+      ref_id: 11.6.1
+      description: "Механизм обнаружения изменений и несанкционированного вмешательства развертывается следующим образом:\n- Чтобы оповещать персонал о несанкционированной модификации (включая индикаторы компрометации, изменения, добавления и удаления) HTTP-заголовков и содержимого платежных страниц, полученных браузером потребителя.\n- Механизм настроен на оценку полученного HTTP-заголовка и платежной страницы.\n- Функции механизма выполняются следующим образом:\n    – Не реже одного раза в семь дней.\n    ИЛИ\n    – Периодически (с частотой, определенной в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1)."
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:maintain-an-information-security-policy
+      assessable: false
+      depth: 1
+      name: Поддержание политики информационной безопасности
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:maintain-an-information-security-policy
+      ref_id: '12'
+      name: Требование 12
+      description: Поддержка информационной безопасности с помощью организационных политик и программ
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.1'
+      description: "Всеобъемлющая политика информационной безопасности, которая регулирует и обеспечивает направление для защиты информационных активов организации, известна и актуальна."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1
+      ref_id: 12.1.1
+      description: 'Общая политика информационной безопасности:
+
+        - Установлена.
+
+        - Опубликована.
+
+        - Поддерживается.
+
+        - Распространена среди всего соответствующего персонала, а также соответствующих поставщиков и деловых партнеров.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1
+      ref_id: 12.1.2
+      description: 'Политика информационной безопасности:
+
+        - Пересматривается не реже одного раза в 12 месяцев.
+
+        - Обновляется по мере необходимости для отражения изменений в бизнес-целях или рисков для среды.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1
+      ref_id: 12.1.3
+      description: Политика безопасности четко определяет роли и обязанности в области информационной безопасности для всего персонала, и весь персонал осведомлен о своих обязанностях в области информационной безопасности и подтверждает их.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.1
+      ref_id: 12.1.4
+      description: Ответственность за информационную безопасность формально назначена Руководителю службы информационной безопасности или другому знающему сотруднику высшего руководства в области информационной безопасности.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.2'
+      description: Политики допустимого использования для технологий конечных пользователей определены и реализованы.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.2
+      ref_id: 12.2.1
+      description: 'Политики допустимого использования для технологий конечных пользователей документированы и реализованы, включая:
+
+        - Явное утверждение уполномоченными сторонами.
+
+        - Допустимые способы использования технологии.
+
+        - Список продуктов, утвержденных компанией для использования сотрудниками, включая аппаратное и программное обеспечение.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.3'
+      description: Риски для среды данных держателей карт формально идентифицируются, оцениваются и управляются.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3
+      ref_id: 12.3.1
+      description: 'Каждое требование PCI DSS, которое предоставляет гибкость в том, как часто оно выполняется (например, требования, выполняемые периодически), поддерживается целевым анализом рисков, который документирован и включает:
+
+        - Идентификацию активов, которые защищаются.
+
+        - Идентификацию угроз, от которых защищает требование.
+
+        - Идентификацию факторов, которые способствуют вероятности и/или воздействию реализации угрозы.
+
+        - Результирующий анализ, который определяет и включает обоснование того, как часто требование должно выполняться, чтобы минимизировать вероятность реализации угрозы.
+
+        - Пересмотр каждого целевого анализа рисков не реже одного раза в 12 месяцев для определения, остаются ли результаты все еще действительными или требуется обновленный анализ рисков.
+
+        - Выполнение обновленных анализов рисков, когда это необходимо, как определено ежегодным пересмотром.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3
+      ref_id: 12.3.2
+      description: 'Целевой анализ рисков выполняется для каждого требования PCI DSS, которое организация выполняет с помощью настроенного подхода, чтобы включить:
+
+        - Документированные доказательства, детализирующие каждый элемент, указанный в Приложении D: Настроенный подход (включая, как минимум, матрицу средств контроля и анализ рисков).
+
+        - Утверждение документированных доказательств высшим руководством.
+
+        - Выполнение целевого анализа рисков не реже одного раза в 12 месяцев.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3
+      ref_id: 12.3.3
+      description: 'Используемые криптографические наборы шифров и протоколы документируются и пересматриваются не реже одного раза в 12 месяцев, включая, по крайней мере, следующее:
+
+        - Актуальную инвентаризацию всех используемых криптографических наборов шифров и протоколов, включая цель и место использования.
+
+        - Активный мониторинг отраслевых тенденций относительно continued viability всех используемых криптографических наборов шифров и протоколов.
+
+        - Документированную стратегию реагирования на anticipated changes в криптографических уязвимостях.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.3
+      ref_id: 12.3.4
+      description: "Используемые аппаратные и программные технологии пересматриваются не реже одного раза в 12 месяцев, включая, по крайней мере, следующее:\n• Анализ того, что технологии продолжают своевременно получать исправления безопасности от поставщиков.\n• Анализ того, что технологии продолжают поддерживать (и не препятствуют) соответствию организации PCI DSS.\n• Документирование любых отраслевых объявлений или тенденций, связанных с технологией, таких как когда поставщик объявил планы «окончания срока службы» для технологии.\n• Документирование плана, утвержденного высшим руководством, по исправлению устаревших технологий, включая те, для которых поставщики объявили планы «окончания срока службы»."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.4'
+      description: Соответствие PCI DSS управляется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4
+      ref_id: 12.4.1
+      description: 'Дополнительное требование только для поставщиков услуг: Ответственность установлена высшим руководством за защиту данных держателей карт и программу соответствия PCI DSS, чтобы включить:
+
+        - Общую подотчетность за поддержание соответствия PCI DSS.
+
+        - Определение устава для программы соответствия PCI DSS и коммуникацию высшему руководству.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4
+      ref_id: 12.4.2
+      description: "Дополнительное требование только для поставщиков услуг: Проверки выполняются не реже одного раза в три месяца для подтверждения, что персонал выполняет свои задачи в соответствии со всеми политиками безопасности и операционными процедурами. \nПроверки выполняются персоналом, отличным от ответственного за выполнение данной задачи, и включают, но не ограничиваются, следующими задачами:\n- Ежедневные проверки журналов.\n- Проверки конфигурации для средств контроля безопасности сети.\n- Применение стандартов конфигурации к новым системам.\n- Реагирование на оповещения безопасности.\n- Процессы управления изменениями."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4.2.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.4.2
+      ref_id: 12.4.2.1
+      description: 'Дополнительное требование только для поставщиков услуг: Проверки, проведенные в соответствии с Требованием 12.4.2, документируются, чтобы включить:
+
+        - Результаты проверок.
+
+        - Документированные действия по исправлению, предпринятые для любых задач, которые были обнаружены как не выполняемые в Требовании 12.4.2.
+
+        - Просмотр и подписание результатов персоналом, назначенным ответственность за программу соответствия PCI DSS.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.5'
+      description: Область действия PCI DSS документируется и проверяется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5
+      ref_id: 12.5.1
+      description: Ведется и поддерживается в актуальном состоянии инвентаризация компонентов системы, которые входят в область действия PCI DSS, включая описание функции/использования.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5
+      ref_id: 12.5.2
+      description: 'Область действия PCI DSS документируется и подтверждается организацией не реже одного раза в 12 месяцев и при значительных изменениях в среде, входящей в область действия. Как минимум, проверка области действия включает:
+
+        - Идентификацию всех потоков данных для различных этапов платежа (например, авторизация, capture settlement, chargebacks и refunds) и каналов приема (например, card-present, card-not-present и e-commerce).
+
+        - Обновление всех диаграмм потоков данных в соответствии с Требованием 1.2.4.
+
+        - Идентификацию всех мест, где хранятся, обрабатываются и передаются данные учетной записи, включая, но не ограничиваясь: 1) любые места за пределами currently определенной CDE, 2) приложения, которые обрабатывают CHD, 3) передачи между системами и сетями, и 4) файлы резервных копий.
+
+        - Идентификацию всех компонентов системы в CDE, подключенных к CDE или которые могут повлиять на безопасность CDE.
+
+        - Идентификацию всех используемых средств контроля сегментации и сред, от которых сегментирована CDE, включая обоснование для сред, не входящих в область действия.
+
+        - Идентификацию всех подключений от сторонних организаций с доступом к CDE.
+
+        - Подтверждение того, что все идентифицированные потоки данных, данные учетной записи, компоненты системы, средства контроля сегментации и подключения от третьих сторон с доступом к CDE включены в область действия.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5.2.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5.2
+      ref_id: 12.5.2.1
+      description: 'Дополнительное требование только для поставщиков услуг: Область действия PCI DSS документируется и подтверждается организацией не реже одного раза в шесть месяцев и при значительных изменениях в среде, входящей в область действия. Как минимум, проверка области действия включает все элементы, указанные в Требовании 12.5.2.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.5
+      ref_id: 12.5.3
+      description: 'Дополнительное требование только для поставщиков услуг: Значительные изменения в организационной структуре приводят к документированному (внутреннему) пересмотру воздействия на область действия PCI DSS и применимости средств контроля, с результатами, сообщенными высшему руководству.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.6'
+      description: Обучение осведомленности о безопасности является постоянной деятельностью.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6
+      ref_id: 12.6.1
+      description: "Реализована формальная программа осведомленности о безопасности, чтобы весь персонал знал о политике и процедурах информационной безопасности организации, а также о своей роли в защите данных держателей карт."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6
+      ref_id: 12.6.2
+      description: "Программа осведомленности о безопасности:\n- Пересматривается не реже одного раза в 12 месяцев, и\n- Обновляется по мере необходимости для устранения любых новых угроз и уязвимостей, которые могут повлиять на безопасность CDE организации или информацию, предоставленную персоналу об их роли в защите данных держателей карт."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6
+      ref_id: 12.6.3
+      description: 'Персонал получает обучение осведомленности о безопасности следующим образом:
+
+        - При приеме на работу и не реже одного раза в 12 месяцев.
+
+        - Используются несколько методов коммуникации.
+
+        - Персонал подтверждает не реже одного раза в 12 месяцев, что он прочитал и понял политику и процедуры информационной безопасности.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.3.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.3
+      ref_id: 12.6.3.1
+      description: 'Обучение осведомленности о безопасности включает осведомленность об угрозах и уязвимостях, которые могут повлиять на безопасность CDE, включая, но не ограничиваясь:
+
+        - Фишинг и связанные с ним атаки.
+
+        - Социальную инженерию.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.3.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.6.3
+      ref_id: 12.6.3.2
+      description: Обучение осведомленности о безопасности включает осведомленность о допустимом использовании технологий конечных пользователей в соответствии с Требованием 12.2.1.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.7
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.7'
+      description: Персонал проверяется для снижения рисков от внутренних угроз.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.7.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.7
+      ref_id: 12.7.1
+      description: Потенциальный персонал, который будет иметь доступ к CDE, проверяется, в рамках ограничений местных законов, до приема на работу, чтобы минимизировать риск атак из внутренних источников.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.8'
+      description: Риск для информационных активов, связанный с отношениями с поставщиками услуг третьих сторон (TPSP), управляется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8
+      ref_id: 12.8.1
+      description: Ведется список всех поставщиков услуг третьих сторон (TPSP), с которыми shared данные учетной записи или которые могут повлиять на безопасность данных учетной записи, включая описание для каждой из предоставляемых услуг.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8
+      ref_id: 12.8.2
+      description: "Поддерживаются письменные соглашения с TPSP следующим образом:\n- Письменные соглашения поддерживаются со всеми TPSP, с которыми shared данные учетной записи или которые могут повлиять на безопасность CDE.\n- Письменные соглашения включают подтверждения от TPSP, что они несут ответственность за безопасность данных учетной записи, которыми TPSP владеют или иным образом хранят, обрабатывают или передают от имени организации, или в той степени, в которой они могут повлиять на безопасность CDE организации."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8
+      ref_id: 12.8.3
+      description: Установленный процесс реализован для взаимодействия с TPSP, включая надлежащую проверку до взаимодействия.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8
+      ref_id: 12.8.4
+      description: "Реализована программа для мониторинга статуса соответствия TPSP PCI DSS не реже одного раза в 12 месяцев."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.8
+      ref_id: 12.8.5
+      description: Поддерживается информация о том, какие требования PCI DSS управляются каждым TPSP, какие управляются организацией, и любые, которые shared между TPSP и организацией.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.9
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.9'
+      description: "Поставщики услуг третьих сторон (TPSP) поддерживают соответствие PCI DSS своих клиентов."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.9.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.9
+      ref_id: 12.9.1
+      description: "Дополнительное требование только для поставщиков услуг: TPSP подтверждают в письменной форме клиентам, что они несут ответственность за безопасность данных учетной записи, которыми TPSP владеют или иным образом хранят, обрабатывают или передают от имени клиента, или в той степени, в которой они могут повлиять на безопасность CDE клиента."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.9.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.9
+      ref_id: 12.9.2
+      description: "Дополнительное требование только для поставщиков услуг: TPSP поддерживают запросы своих клиентов на информацию для выполнения Требований 12.8.4 и 12.8.5, предоставляя следующее по запросу клиента:\n- Информацию о статусе соответствия PCI DSS для любой услуги, которую TPSP выполняет от имени клиентов (Требование 12.8.4).\n- Информацию о том, какие требования PCI DSS являются ответственностью TPSP, а какие - ответственностью клиента, включая любые shared обязанности (Требование 12.8.5)."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12
+      ref_id: '12.10'
+      description: На предполагаемые и подтвержденные инциденты безопасности, которые могут повлиять на CDE, немедленно реагируют.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.1
+      description: 'План реагирования на инциденты существует и готов к активации в случае предполагаемого или подтвержденного инцидента безопасности. План включает, но не ограничивается:
+
+        - Роли, обязанности и стратегии коммуникации и контактов в случае предполагаемого или подтвержденного инцидента безопасности, включая уведомление, как минимум, платежных систем и эквайеров.
+
+        - Процедуры реагирования на инциденты с конкретными мероприятиями по сдерживанию и устранению для различных типов инцидентов.
+
+        - Процедуры восстановления бизнеса и непрерывности.
+
+        - Процессы резервного копирования данных.
+
+        - Анализ юридических требований для отчетности о компрометациях.
+
+        - Охват и ответы всех критических компонентов системы.
+
+        - Ссылку или включение процедур реагирования на инциденты от платежных систем.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.2
+      description: 'Не реже одного раза в 12 месяцев план реагирования на инциденты безопасности:
+
+        - Пересматривается, и содержание обновляется по мере необходимости.
+
+        - Тестируется, включая все элементы, перечисленные в Требовании 12.10.1.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.3
+      description: Определенный конкретный персонал назначен для доступности 24/7 для реагирования на предполагаемые или подтвержденные инциденты безопасности.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.4
+      description: Персонал, ответственный за реагирование на предполагаемые и подтвержденные инциденты безопасности, appropriately и периодически обучается своим обязанностям по реагированию на инциденты.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.4.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.4
+      ref_id: 12.10.4.1
+      description: "Частота периодического обучения для персонала по реагированию на инциденты определяется в целевом анализе рисков организации, который выполняется в соответствии со всеми элементами, указанными в Требовании 12.3.1."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.5
+      description: 'План реагирования на инциденты безопасности включает мониторинг и реагирование на оповещения от систем мониторинга безопасности, включая, но не ограничиваясь:
+
+        - Системы обнаружения и предотвращения вторжений.
+
+        - Средства контроля безопасности сети.
+
+        - Механизмы обнаружения изменений для критических файлов.
+
+        - Механизм обнаружения изменений и несанкционированного вмешательства для платежных страниц. Этот пункт является лучшей практикой до даты его вступления в силу; подробности см. в примечаниях по применимости ниже.
+
+        - Обнаружение несанкционированных точек беспроводного доступа.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.6
+      description: План реагирования на инциденты безопасности модифицируется и развивается в соответствии с извлеченными уроками и для включения отраслевых разработок.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10.7
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:12.10
+      ref_id: 12.10.7
+      description: 'Процедуры реагирования на инциденты существуют, чтобы быть инициированными при обнаружении хранимого PAN anywhere it is not expected, и включают:
+
+        - Определение того, что делать, если PAN обнаружен вне CDE, включая его извлечение, безопасное удаление и/или миграцию в currently определенную CDE, в зависимости от обстоятельств.
+
+        - Идентификацию того, хранятся ли конфиденциальные данные аутентификации с PAN.
+
+        - Определение того, откуда пришли данные учетной записи и как они оказались там, где их не ожидали.
+
+        - Исправление утечек данных или пробелов в процессах, которые привели к тому, что данные учетной записи оказались там, где их не ожидали.'
+
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a
+      assessable: false
+      depth: 1
+      ref_id: A
+      name: Приложение A
+      description: Дополнительные требования PCI DSS
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a
+      ref_id: A1
+      name: Приложение A1
+      description: Дополнительные требования PCI DSS для поставщиков услуг с множественной арендой
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1
+      ref_id: A1.1
+      description: Поставщики услуг с множественной арендой защищают и разделяют все среды и данные клиентов.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1
+      ref_id: A1.1.1
+      description: "Логическое разделение реализовано следующим образом:\n- Поставщик не может получить доступ к средам своих клиентов без авторизации.\n- Клиенты не могут получить доступ к среде поставщика без авторизации."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1
+      ref_id: A1.1.2
+      description: Реализованы средства контроля, такие что каждый клиент имеет разрешение на доступ только к своим собственным данным держателей карт и CDE.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1
+      ref_id: A1.1.3
+      description: Реализованы средства контроля, такие что каждый клиент может получать доступ только к ресурсам, выделенным ему.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.1
+      ref_id: A1.1.4
+      description: Эффективность средств контроля логического разделения, используемых для разделения сред клиентов, подтверждается не реже одного раза в шесть месяцев с помощью тестирования на проникновение.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1
+      ref_id: A1.2
+      description: Поставщики услуг с множественной арендой обеспечивают ведение журналов и реагирование на инциденты для всех клиентов.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2
+      ref_id: A1.2.1
+      description: "Возможность ведения журналов аудита включена для среды каждого клиента, что согласуется с Требованием PCI DSS 10, включая:\n- Журналы включены для общих сторонних приложений.\n- Журналы активны по умолчанию.\n- Журналы доступны для просмотра только владеющим клиентом.\n- Местоположения журналов четко сообщаются владеющему клиенту.\n- Данные и доступность журналов согласуются с Требованием PCI DSS 10."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2
+      ref_id: A1.2.2
+      description: Реализованы процессы или механизмы для поддержки и/или облегчения prompt судебных расследований в случае предполагаемого или подтвержденного инцидента безопасности для любого клиента.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a1.2
+      ref_id: A1.2.3
+      description: 'Реализованы процессы или механизмы для отчетности и устранения предполагаемых или подтвержденных инцидентов безопасности и уязвимостей, включая:
+
+        - Клиенты могут безопасно сообщать об инцидентах безопасности и уязвимостях поставщику.
+
+        - Поставщик устраняет и исправляет предполагаемые или подтвержденные инциденты безопасности и уязвимости в соответствии с Требованием 6.3.1.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a2
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a
+      ref_id: A2
+      name: Приложение A2
+      description: Дополнительные требования PCI DSS для организаций, использующих SSL/Early TLS для подключений карточных терминалов POS POI
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a2
+      ref_id: A2.1
+      description: Терминалы POI, использующие SSL и/или early TLS, подтверждены как не подверженные известным эксплойтам SSL/TLS.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1
+      ref_id: A2.1.1
+      description: Там, где терминалы POS POI у мерчанта или в месте приема платежей используют SSL и/или early TLS, организация подтверждает, что устройства не подвержены каким-либо известным эксплойтам для этих протоколов.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1
+      ref_id: A2.1.2
+      description: 'Дополнительное требование только для поставщиков услуг: Все поставщики услуг с существующими точками подключения к терминалам POS POI, которые используют SSL и/или early TLS, как определено в A2.1, имеют формальный План снижения рисков и миграции, который включает:
+
+        - Описание использования, включая то, какие данные передаются, типы и количество систем, которые используют и/или поддерживают SSL/early TLS, и тип среды.
+
+        - Результаты оценки рисков и средства контроля снижения рисков, которые implemented.
+
+        - Описание процессов для мониторинга новых уязвимостей, связанных с SSL/early TLS.
+
+        - Описание процессов контроля изменений, которые implemented, чтобы гарантировать, что SSL/early TLS не implemented в новые среды.
+
+        - Обзор плана проекта миграции по замене SSL/early TLS на будущую дату.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a2.1
+      ref_id: A2.1.3
+      description: 'Дополнительное требование только для поставщиков услуг: Все поставщики услуг предоставляют безопасное сервисное предложение.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3
+      assessable: false
+      depth: 2
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a
+      ref_id: A3
+      name: Приложение A3
+      description: Дополнительная валидация для назначенных организаций (DESV)
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3
+      ref_id: A3.1
+      description: Реализована программа соответствия PCI DSS.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1
+      ref_id: A3.1.1
+      description: 'Ответственность установлена высшим руководством за защиту данных учетной записи и программу соответствия PCI DSS, которая включает:
+
+        - Общую подотчетность за поддержание соответствия PCI DSS.
+
+        - Определение устава для программы соответствия PCI DSS.
+
+        - Предоставление обновлений высшему руководству и совету директоров по инициативам и проблемам соответствия PCI DSS, включая мероприятия по исправлению, не реже одного раза в 12 месяцев.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1
+      ref_id: A3.1.2
+      description: 'Формальная программа соответствия PCI DSS существует, которая включает:
+
+        - Определение мероприятий для поддержания и мониторинга общего соответствия PCI DSS, включая повседневную деятельность.
+
+        - Процессы ежегодной оценки PCI DSS.
+
+        - Процессы для непрерывной проверки требований PCI DSS (например, ежедневно, еженедельно, каждые три месяца, в зависимости от применимости требования).
+
+        - Процесс для выполнения анализа воздействия на бизнес, чтобы определить потенциальные воздействия PCI DSS для стратегических бизнес-решений.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1
+      ref_id: A3.1.3
+      description: 'Роли и обязанности по соответствию PCI DSS специально определены и формально назначены одному или нескольким сотрудникам, включая:
+
+        - Управление повседневной деятельностью PCI DSS.
+
+        - Управление ежегодными оценками PCI DSS.
+
+        - Управление непрерывной проверкой требований PCI DSS (например, ежедневно, еженедельно, каждые три месяца, в зависимости от применимости требования).
+
+        - Управление анализом воздействия на бизнес, чтобы определить потенциальные воздействия PCI DSS для стратегических бизнес-решений.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.1
+      ref_id: A3.1.4
+      description: Актуальное обучение PCI DSS и/или информационной безопасности предоставляется не реже одного раза в 12 месяцев персоналу с обязанностями по соответствию PCI DSS (как идентифицировано в A3.1.3).
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3
+      ref_id: A3.2
+      description: Область действия PCI DSS документируется и проверяется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      ref_id: A3.2.1
+      description: 'Область действия PCI DSS документируется и подтверждается на точность не реже одного раза в три месяца и при значительных изменениях в среде, входящей в область действия. Как минимум, проверка области действия включает:
+
+        - Идентификацию всех потоков данных для различных этапов платежа (например, авторизация, capture, settlement, chargebacks и refunds) и каналов приема (например, card-present, card-not-present и e-commerce).
+
+        - Обновление всех диаграмм потоков данных в соответствии с Требованием 1.2.4.
+
+        - Идентификацию всех мест, где хранятся, обрабатываются и передаются данные учетной записи, включая, но не ограничиваясь 1) любыми местами за пределами currently определенной CDE, 2) приложениями, которые обрабатывают CHD, 3) передачами между системами и сетями, и 4) файлами резервных копий.
+
+        - Для любых данных учетной записи, найденных за пределами currently определенной CDE, либо 1) безопасно удалить их, 2) мигрировать их в currently определенную CDE, или 3) расширить currently определенную CDE, чтобы включить их.
+
+        - Идентификацию всех компонентов системы в CDE, подключенных к CDE или которые могут повлиять на безопасность CDE.
+
+        - Идентификацию всех используемых средств контроля сегментации и сред, от которых сегментирована CDE, включая обоснование для сред, не входящих в область действия.
+
+        - Идентификацию всех подключений к сторонним организациям с доступом к CDE.
+
+        - Подтверждение того, что все идентифицированные потоки данных, данные учетной записи, компоненты системы, средства контроля сегментации и подключения от третьих сторон с доступом к CDE включены в область действия.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      ref_id: A3.2.2
+      description: 'Воздействие на область действия PCI DSS для всех изменений систем или сетей определяется, включая добавление новых систем и новых сетевых подключений. Процессы включают:
+
+        - Выполнение формальной оценки воздействия PCI DSS.
+
+        - Идентификацию применимых требований PCI DSS к системе или сети.
+
+        - Обновление области действия PCI DSS по мере необходимости.
+
+        - Документированное подписание результатов оценки воздействия ответственным персоналом (как определено в A3.1.3).'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.2.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.2
+      ref_id: A3.2.2.1
+      description: После завершения изменения подтверждается, что все соответствующие требования PCI DSS implemented на всех новых или измененных системах и сетях, и документация обновляется по мере необходимости.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      ref_id: A3.2.3
+      description: Изменения в организационной структуре приводят к формальному (внутреннему) пересмотру воздействия на область действия PCI DSS и применимости средств контроля.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.4
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      ref_id: A3.2.4
+      description: "Если используется сегментация, область действия PCI DSS подтверждается следующим образом:\n• В соответствии с методологией организации, определенной в Требовании 11.4.1.\n• Тестирование на проникновение выполняется на средствах контроля сегментации не реже одного раза в шесть месяцев и после любых изменений в средствах контроля/методах сегментации.\n• Тестирование на проникновение охватывает все используемые средства контроля/методы сегментации.\n• Тестирование на проникновение проверяет, что средства контроля/методы сегментации операционны и эффективны, и изолируют CDE от всех систем, не входящих в область действия."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.5
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      ref_id: A3.2.5
+      description: 'Реализована методология обнаружения данных, которая:
+
+        - Подтверждает область действия PCI DSS.
+
+        - Находит все источники и местоположения PAN в открытом виде не реже одного раза в три месяца и при значительных изменениях в CDE или процессах.
+
+        - Устраняет возможность нахождения PAN в открытом виде на системах и сетях за пределами currently определенной CDE.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.5.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.5
+      ref_id: A3.2.5.1
+      description: 'Методы обнаружения данных подтверждаются следующим образом:
+
+        - Эффективность методов тестируется.
+
+        - Методы способны обнаруживать PAN в открытом виде на всех типах компонентов системы и форматах файлов в использовании.
+
+        - Эффективность методов обнаружения данных подтверждается не реже одного раза в 12 месяцев.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.5.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.5
+      ref_id: A3.2.5.2
+      description: 'Процедуры реагирования implemented, чтобы быть инициированными при обнаружении PAN в открытом виде вне CDE, чтобы включить:
+
+        - Определение того, что делать, если PAN в открытом виде обнаружен вне CDE, включая его извлечение, безопасное удаление и/или миграцию в currently определенную CDE, в зависимости от обстоятельств.
+
+        - Определение того, как данные оказались вне CDE.
+
+        - Исправление утечек данных или пробелов в процессах, которые привели к тому, что данные оказались вне CDE.
+
+        - Идентификацию источника данных.
+
+        - Идентификацию того, хранятся ли какие-либо данные дорожки с PAN.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.6
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2
+      ref_id: A3.2.6
+      description: 'Реализованы механизмы для обнаружения и предотвращения выхода PAN в открытом виде из CDE через несанкционированный канал, метод или процесс, включая механизмы, которые:
+
+        - Активно работают.
+
+        - Настроены на обнаружение и предотвращение выхода PAN в открытом виде из CDE через несанкционированный канал, метод или процесс.
+
+        - Генерируют журналы аудита и оповещения при обнаружении выхода PAN в открытом виде из CDE через несанкционированный канал, метод или процесс.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.6.1
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.2.6
+      ref_id: A3.2.6.1
+      description: 'Процедуры реагирования implemented, чтобы быть инициированными при обнаружении попыток удалить PAN в открытом виде из CDE через несанкционированный канал, метод или процесс. Процедуры реагирования включают:
+
+        - Процедуры для prompt расследования оповещений ответственным персоналом.
+
+        - Процедуры для исправления утечек данных или пробелов в процессах, по мере необходимости, чтобы предотвратить любую потерю данных.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3
+      ref_id: A3.3
+      description: PCI DSS включен в повседневную деятельность (BAU).
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3
+      ref_id: A3.3.1
+      description: 'Сбои критических систем контроля безопасности обнаруживаются, оповещаются и оперативно устраняются, включая, но не ограничиваясь сбоями:
+
+        - Средств контроля безопасности сети.
+
+        - IDS/IPS.
+
+        - FIM.
+
+        - Решений антивирусного программного обеспечения.
+
+        - Средств контроля физического доступа.
+
+        - Средств контроля логического доступа.
+
+        - Механизмов ведения журналов аудита.
+
+        - Средств контроля сегментации (если используются).
+
+        - Автоматизированных механизмов проверки журналов аудита. Этот пункт является лучшей практикой до даты его вступления в силу.
+
+        - Автоматизированных инструментов обзора кода (если используются). Этот пункт является лучшей практикой до даты его вступления в силу.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3.1.2
+      assessable: true
+      depth: 5
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3.1
+      ref_id: A3.3.1.2
+      description: 'На сбои любых критических систем контроля безопасности оперативно реагируют. Процессы для реагирования на сбои в системах контроля безопасности включают:
+
+        - Восстановление функций безопасности.
+
+        - Идентификацию и документирование продолжительности (дата и время от начала до конца) сбоя безопасности.
+
+        - Идентификацию и документирование причины (причин) сбоя, включая корневую причину, и документирование исправления, необходимого для устранения корневой причины.
+
+        - Идентификацию и устранение любых проблем безопасности, возникших во время сбоя.
+
+        - Определение того, требуются ли дальнейшие действия в результате сбоя безопасности.
+
+        - Реализацию средств контроля для предотвращения повторного возникновения причины сбоя.
+
+        - Возобновление мониторинга средств контроля безопасности.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3.2
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3
+      ref_id: A3.3.2
+      description: "Аппаратные и программные технологии пересматриваются не реже одного раза в 12 месяцев, чтобы подтвердить, продолжают ли они соответствовать требованиям PCI DSS организации."
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3.3
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.3
+      ref_id: A3.3.3
+      description: 'Проверки выполняются не реже одного раза в три месяца, чтобы убедиться, что за повседневной деятельностью следят. Проверки выполняются персоналом, назначенным на программу соответствия PCI DSS (как идентифицировано в A3.1.3), и включают:
+
+        - Подтверждение того, что все мероприятия повседневной деятельности, включая A3.2.2, A3.2.6 и A3.3.1, выполняются.
+
+        - Подтверждение того, что персонал следует политикам безопасности и операционным процедурам (например, ежедневные проверки журналов, проверки наборов правил для средств контроля безопасности сети, стандарты конфигурации для новых систем).
+
+        - Документирование того, как проверки были завершены, включая то, как все мероприятия повседневной деятельности были проверены как установленные.
+
+        - Сбор документированных доказательств, как требуется для ежегодной оценки PCI DSS.
+
+        - Просмотр и подписание результатов персоналом, назначенным ответственность за программу соответствия PCI DSS, как идентифицировано в A3.1.3.
+
+        - Сохранение записей и документации в течение не менее 12 месяцев, охватывая все мероприятия повседневной деятельности.'
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.4
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3
+      ref_id: A3.4
+      description: Логический доступ к среде данных держателей карт контролируется и управляется.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.4.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.4
+      ref_id: A3.4.1
+      description: Учетные записи пользователей и права доступа к компонентам системы, входящим в область действия, проверяются не реже одного раза в шесть месяцев, чтобы убедиться, что учетные записи пользователей и права доступа остаются соответствующими на основе должностных функций, и что весь доступ авторизован.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.5
+      assessable: true
+      depth: 3
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3
+      ref_id: A3.5
+      description: Подозрительные события идентифицируются и на них реагируют.
+    - urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.5.1
+      assessable: true
+      depth: 4
+      parent_urn: urn:intuitem:risk:req_node:pcidss-4_0:a3.5
+      ref_id: A3.5.1
+      description: 'Реализована методология для prompt идентификации шаблонов атак и нежелательного поведения across систем, которая включает:
+
+        - Идентификацию аномалий или подозрительной активности по мере их возникновения.
+
+        - Выдачу prompt оповещений при обнаружении подозрительной активности или аномалии ответственному персоналу.
+
+        - Реагирование на оповещения в соответствии с документированными процедурами реагирования.'
